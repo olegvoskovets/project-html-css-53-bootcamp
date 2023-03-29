@@ -1,15 +1,43 @@
-
+.how-its-made-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+    text-align: center;
+}
+.how-its-made-list-title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--text-color-dark);
+}
+.how-its-made-list-item{
+    font-size: 14px;
+    line-height: 18px;
+}
+.how-its-made-title-ogange{
+    color: var(--orange-color);
+}
 .How-its-made-video-wrapper{
     width: 335px;
     height: 500px;
-
-    width: 614px;
-    height: 400px;
-
-    width: 600px;
-    height: 400px;
-    background-color: teal;
-    /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4)); */
+    @media screen and (768px) {
+        width: 614px;
+        height: 400px;
+    }
+    @media screen and (1200px) {
+        width: 600px;
+        height: 400px;
+    }
+    /* background-color: teal; */
+    background-image: url(../img/mobile/how-its-made-tel.png);
+    @media screen and (768px) {
+        background-image: url(../img/desktop/how-its-made-tablet.png);
+    }
+    @media screen and (768px) {
+        background-image: url(../img/desktop/how-its-made-comp.png);
+    }
     border-radius: 15px;
 }
 .how-its-made-text-wrapper{
