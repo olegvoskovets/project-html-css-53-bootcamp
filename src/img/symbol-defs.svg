@@ -36,5 +36,11 @@
 <symbol id="icon-fat-burger" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.5" d="M4 16h24M4 8h24M4 24h24"></path>
 </symbol>
+<symbol id="icon-circle" viewBox="0 0 32 32">
+<path d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16z"></path>
+</symbol>
+<symbol id="icon-oval" viewBox="0 0 69 32">
+<path d="M52.923 0h-36.923c-8.837 0-16 7.163-16 16s7.163 16 16 16h36.923c8.837 0 16-7.163 16-16s-7.163-16-16-16z"></path>
+</symbol>
 </defs>
 </svg>
