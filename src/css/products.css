@@ -1,0 +1,126 @@
+.products {
+    background-color: #FAFAFA;
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.container {
+    max-width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.products-title span {
+    color: #FD9222;
+}
+.products-title {
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.products-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-top: 32px;
+}
+.products-item {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 32px;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    max-width: 335px;
+}
+.products-name {
+    margin-top: 8px;
+}
+
+.products-description {
+    margin-top: 2px;
+}
+.products-button {
+    margin-top: 18px;
+}
+
+.products-title {
+    text-align: center;
+}
+.products-slider-buttons {
+    display: flex;
+    gap: 13px;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.products-slider-buttons:first-child svg {
+    fill: #FD9222;
+}
+
+.products-slider-buttons svg {
+    fill: rgba(17, 17, 17, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+    .products-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        gap: 18px;
+    }
+    .products-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.16;
+    }
+    .products-item {
+        max-width: 270px;
+    }
+    .products-list {
+        margin-top: 50px;
+        }
+
+.products-slider-buttons {
+            margin-top: 32px;
+     }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1134px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .products {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+    .products-list {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){ 
+    .container {
+        max-width: 704px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .products {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
