@@ -1,22 +1,106 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
-    border: 0;
     padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
     overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
-.advantages-container{
-    width: 336px;
-    
-}
-.advantages-section{
-   background-color: #1E1823;
-   color:#ffffff;
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.advantages-container {
+    width: 336px;
+    padding: 20px;
+
+}
+
+.advantages-section {
+    background-color: #1E1823;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+
+
+}
+
+.advantages-title {
+    margin-bottom: 18px;
+
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.advantages-item:not(:last-child) {
+    margin-bottom: 38px;
+}
+
+.advantages-icon {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+@media screen and (min-width:768px) {
+    .advantages-list{
+        display: flex;
+        justify-content: space-between;
+                   
+        row-gap: 32px;
+    }
+    .advantages-item{
+        min-width: 336px;
+        display: block;
+    }
 }
