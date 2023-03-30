@@ -1,0 +1,43 @@
+.container-subscribe{
+    max-width: 100%;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-image: url(../img/mobile/explore-our-new-chocolate-first-1-tel.png);
+}
+
+.title-subscribe{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: #ffffff;
+   
+}
+.text-subscribe{
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+.subscribe-btn{
+  /* display: inline-block; */
+  justify-content: center;
+  padding: 12px 28px;
+  border: 1px;
+  border-radius: 100px;
+  color:#ffffff;
+  background-color:  #FD9222;
+ 
+ display:flex;
+justify-content:center;
+/* align-items:center;  */
+
+  /* margin-top: 48px; */
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  color:#FD9222;
+  background-color: #FCF1E0;
+}
