@@ -1,0 +1,121 @@
+.footer-container {
+  background-color: var(--secondary-bg-color);
+  padding: 32px 20px;
+}
+.footer-upper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 32px;
+}
+.footer-upper-first {
+  margin-bottom: 32px;
+}
+.footer-upper-first-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: var(--text-color-white);
+}
+.footer-upper-first-text-color {
+  color: var(--orange-color);
+}
+.footer-upper-second {
+  display: flex;
+}
+.footer-social-list {
+  display: flex;
+  gap: 14px;
+}
+.footer-social-icon {
+  fill: #fff;
+  background-color: teal;
+}
+.footer-social-list-link {
+  display: flex;
+  width: 22px;
+  height: 22px;
+}
+.footer-addres {
+  font-style: normal;
+}
+.footer-upper-second-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--text-color-white);
+  margin-bottom: 14px;
+}
+.footer-mail {
+  font-size: 14px;
+  line-height: 1.29px;
+  letter-spacing: -0.02em;
+  color: var(--text-color-white);
+}
+.footer-phone {
+  margin-bottom: 4px;
+  line-height: 1.29px;
+  letter-spacing: -0.02em;
+  color: var(--text-color-white);
+  font-size: 14px;
+}
+.footer-bottom {
+  padding-top: 32px;
+}
+.footer-bottom-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer-bottom-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--text-color-white);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding: 50px 32px;
+  }
+  .footer-upper {
+    display: flex;
+    padding-bottom: 50px;
+  }
+  .footer-upper-first-text {
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    width: 300px;
+  }
+  .footer-upper-first {
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
+
+  .footer-addres {
+    margin-right: auto;
+    margin-left: 124px;
+  }
+  .footer-bottom-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-bottom {
+    padding-top: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-upper {
+    padding-bottom: 58px;
+  }
+  .footer-addres {
+    margin: 0;
+  }
+  .footer-social-list {
+    margin-left: 64px;
+  }
+  .footer-bottom-list {
+    gap: 24px;
+  }
+}
