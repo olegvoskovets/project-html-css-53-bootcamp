@@ -1,17 +1,14 @@
- .container-subscribe{
+ .section-subscribe{
     text-align: center;
     max-width:100%;
-    padding-left: 25px;
-    padding-right: 25px; 
-    padding-top: 62px;
-    padding-bottom: 63px;
+    padding: 62px 20px;
     background-size: cover;
     background-image: url(../img/mobile/explore-our-new-chocolate-first-1-tel.png);
 } 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-  .container-subscribe{
+  .section-subscribe{
     background-image:
     url(../img/mobile/explore-our-new-chocolate-first-1-tel@2x.png);
 
@@ -64,8 +61,10 @@
 
 @media screen and (min-width:376px) {
    
-      .container-subscribe{
+      .section-subscribe{
         width: 100%;
+        padding-top: 72px;
+        padding-bottom: 72px;
         background-image: url(../img/tablet/explore-our-new-chocolate-first-tablet-1.png)
   }
   
@@ -74,7 +73,7 @@
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-  .container-subscribe{
+  .section-subscribe{
      background-image: url(../img/tablet/explore-our-new-chocolate-first-tablet-1@2x.png);
   }
 }
@@ -82,15 +81,15 @@
     .title-subscribe{
         font-size: 24px;
         line-height: calc(28 / 24);
-        width: 378px; 
+        max-width: 378px;
         margin-left: auto;
         margin-right: auto;
         }
         .box-subscribe{
-            width: 467px;
+            max-width: 467px;
            
         }
-        .container-subscribe{
+        .section-subscribe{
             width: 100%;
             background-image: url(../img/desktop/explore-our-new-chocolate-first-1-comp.png)
       }
@@ -98,7 +97,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) 
       {
-        .container-subscribe{
+        .section-subscribe{
          background-image: url(../img/desktop/explore-our-new-chocolate-first-1-comp@2x.png);
 }
 }
