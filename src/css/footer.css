@@ -1,5 +1,7 @@
-.footer-container {
+.footer {
   background-color: var(--secondary-bg-color);
+}
+.footer-container {
   padding: 32px 20px;
 }
 .footer-upper {
@@ -25,10 +27,10 @@
 .footer-social-list {
   display: flex;
   gap: 14px;
+  margin-left: auto;
 }
 .footer-social-icon {
-  fill: #fff;
-  background-color: teal;
+  stroke: #fff;
 }
 .footer-social-list-link {
   display: flex;
@@ -103,6 +105,9 @@
   }
   .footer-bottom {
     padding-top: 24px;
+  }
+  .footer-social-list {
+    margin-left: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
