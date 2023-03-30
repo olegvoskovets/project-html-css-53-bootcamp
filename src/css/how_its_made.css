@@ -22,6 +22,7 @@
     align-items: baseline;
     font-size: 14px;
     line-height: 18px;
+    letter-spacing: -0.02em;
 }
 .how-its-made-list-item::before{
     content: "";
@@ -41,7 +42,7 @@
 .how-its-made-wrapper{
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    justify-content: center;
     gap: 20px;
 }
 .how-its-made-video-wrapper{
@@ -55,6 +56,7 @@
     background-color: #FFFFFF;
     border-radius: 15px;
     padding: 32px;
+    max-width: 614px;
 }
 .how-its-made-play-btn{
     display: flex;
@@ -66,37 +68,52 @@
     border: none;
     background-color: transparent;
 }
-.how-its-made-play-icon{
-    width: 35px;;
+.how-its-made-play-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
     height: 35px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    padding-left: 2px;
+
+    transition: transform 250ms linear;
+}
+.how-its-made-play-icon{
+    width: 14px;
+    height: 15px;
     fill: #F5F4F4;
 }
-@media screen and (max-width: 768px){
-    .container.container-how-its-made{
-        max-width: 375px;
-    }
+.how-its-made-play-btn:hover .how-its-made-play-circle,
+.how-its-made-play-btn:focus .how-its-made-play-circle{
+    transform: scale(1.35);
 }
+
 @media screen and (min-width: 768px){
     .how-its-made-video-wrapper{
         width: 614px;
         height: 500px;
         background-image: url(../img/tablet/how-its-made-tablet.png);
     }
-    .container.container-how-its-made{
-        padding-inline: 77px;
-    }
     .how-its-made-list-title{
         margin-bottom: 28px;
     }
-    .how-its-made-play-icon{
-        width: 44px;;
+    .how-its-made-play-circle{
+        width: 44px;
         height: 44px;
+        padding-left: 4px;
+    }
+    .how-its-made-play-icon{
+        width: 20px;
+        height: 21px;
         fill: #F5F4F4;
     }
 }
 @media screen and (min-width: 1200px) {
     .how-its-made-video-wrapper{
         width: 600px;
+        height: 400px;
         background-image: url(../img/desktop/how-its-made-comp.png);
     }
     .how-its-made-text-wrapper{
@@ -104,9 +121,6 @@
     }
     .how-its-made-wrapper{
         flex-direction: row;
-    }
-    .container.container-how-its-made{
-        padding-inline: 32px;
     }
     .how-its-made-list-title{
         margin-bottom: 28px;
