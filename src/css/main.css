@@ -77,7 +77,7 @@ button {
 
 /* tablet */
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 704px;
   }
