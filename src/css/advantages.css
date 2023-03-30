@@ -100,6 +100,9 @@ li {
         min-width: 768px;
 
     }
+    .advantages-item{
+        padding-right: 0;
+    }
 
     ul.advantages-list {
         display: flex;
@@ -128,6 +131,9 @@ li {
         margin-right: auto;
         margin-left: auto;       
                  }
+    .advantages-item {
+        padding-right: 0;
+                }
     .advantages-container {
         min-width: 1200px;
 
