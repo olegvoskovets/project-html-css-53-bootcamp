@@ -30,7 +30,7 @@
   width: 335px;
   height: 270px;
   border-radius: 15px;
-  padding: 28px 55px 71px 56px;
+  padding: 28px 55px;
   position: relative;
   overflow: hidden;
 }
@@ -178,7 +178,7 @@
 
   .unique-components-box {
     width: 270px;
-    padding: 28px 36px 82px 28px;
+    padding: 28px 32px;
   }
 
   .hidden-box-first-button {
