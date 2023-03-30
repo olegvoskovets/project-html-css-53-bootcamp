@@ -19,26 +19,28 @@
 .how-its-made-title-ogange{
     color: var(--orange-color);
 }
-.How-its-made-video-wrapper{
+.how-its-made-video-wrapper{
     width: 335px;
     height: 500px;
-    @media screen and (768px) {
-        width: 614px;
-        height: 400px;
-    }
-    @media screen and (1200px) {
-        width: 600px;
-        height: 400px;
-    }
+    
+    
     /* background-color: teal; */
     background-image: url(../img/mobile/how-its-made-tel.png);
-    @media screen and (768px) {
-        background-image: url(../img/desktop/how-its-made-tablet.png);
+    border-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+    .how-its-made-video-wrapper{
+        width: 614px;
+        height: 400px;
+        background-image: url(../img/tablet/how-its-made-tablet.png);
     }
-    @media screen and (768px) {
+}
+@media screen and (min-width: 1200px) {
+    .how-its-made-video-wrapper{
+        width: 600px;
+        height: 400px;
         background-image: url(../img/desktop/how-its-made-comp.png);
     }
-    border-radius: 15px;
 }
 .how-its-made-text-wrapper{
     background-color: #FFFFFF;
