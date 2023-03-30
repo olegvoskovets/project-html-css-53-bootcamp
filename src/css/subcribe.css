@@ -1,43 +1,103 @@
 .container-subscribe{
-    max-width: 100%;
-    width: 375px;
+    text-align: center;
+    width:  375px;
+    max-width:100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 25px; 
+    padding-top: 62px;
+    padding-bottom: 63px;
+    background-size: cover;
     background-image: url(../img/mobile/explore-our-new-chocolate-first-1-tel.png);
 }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .container-subscribe{
+    max-width: 375px;
+    background-image:
+    url(..img/mobile/explore-our-new-chocolate-first-1-tel@2x.png);
 
+  }
+} 
 .title-subscribe{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 24px;
-    color: #ffffff;
+    color: var(--text-color-white);
    
 }
 .text-subscribe{
-    text-align: center;
-    color: #ffffff;
+    max-width: 326px;
+    display: flex;
+    color:var(--text-color-white);
     margin-bottom: 24px;
 }
 .subscribe-btn{
-  /* display: inline-block; */
-  justify-content: center;
+
   padding: 12px 28px;
   border: 1px;
   border-radius: 100px;
-  color:#ffffff;
-  background-color:  #FD9222;
- 
- display:flex;
-justify-content:center;
-/* align-items:center;  */
-
-  /* margin-top: 48px; */
+  color:var(--text-color-white);
+  background-color: var(--orange-color);
+  transition: background-color 250ms linear;
+   
 }
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-  color:#FD9222;
+  color:var(--orange-color);
   background-color: #FCF1E0;
+}
+
+@media screen and (min-width:376px) {
+   
+      .container-subscribe{
+        width: 100%;
+      max-width: 768px;
+      background-image: url(../img/tablet/explore-our-new-chocolate-first-tablet-2.png)
+  }
+  
+
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .container-subscribe{
+      max-width: 768px;
+      background-image: url(../img/tablet/explore-our-new-chocolate-first-tablet-2@2x.png);
+  }
+}
+@media screen and (min-width:768px){
+    .title-subscribe{
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        }
+        .container-subscribe{
+            width: 100%;
+          max-width: 1440px;
+          background-image: url(../img/desktop/explore-our-new-chocolate-first-1-comp.png)
+      }
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) 
+      {
+        .container-subscribe{
+         background-image: url(..img/desktop/explore-our-new-chocolate-first-1-comp@2x.png);
+}
+}
+
+
+
+@media screen and (min-width:1200px) {
+   
+ 
+
+
+}
+
 }
