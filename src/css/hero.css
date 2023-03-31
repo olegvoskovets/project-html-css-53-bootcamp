@@ -174,3 +174,33 @@
     }
   }
 }
+
+/* (max-width : 375px){.hero-view {width: 100%; }}(min-width : 375px){.hero-view {width: 335px;margin:0 avto;padding: 0 20px}}(min-width : 768px){.hero-view {width: 704px;padding: 0 32px}}__(min-width : 1200px){.hero-view {width: 1136px;}}
+це з padding спробуєм */
+
+@media screen and (max-width: 375px) {
+  .hero-view {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .hero-view {
+    width: 335px;
+    margin: 0 avto;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-view {
+    width: 704px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-view {
+    width: 1136px;
+  }
+}
