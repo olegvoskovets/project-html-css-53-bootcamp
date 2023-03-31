@@ -58,7 +58,8 @@
   background-color: var(--main-bg-color);
 }
 
-.products-button:hover, .products-button:focus {
+.products-button:hover,
+.products-button:focus {
   background-color: var(--orange-color);
 }
 
@@ -71,6 +72,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+
     list-style: none;
     margin-top: 50px;
   }
