@@ -42,5 +42,8 @@
 <symbol id="icon-oval" viewBox="0 0 69 32">
 <path d="M52.923 0h-36.923c-8.837 0-16 7.163-16 16s7.163 16 16 16h36.923c8.837 0 16-7.163 16-16s-7.163-16-16-16z"></path>
 </symbol>
+<symbol id="icon-play" viewBox="0 0 30 32">
+<path d="M0 32v-32l30.476 16-30.476 16z"></path>
+</symbol>
 </defs>
 </svg>
