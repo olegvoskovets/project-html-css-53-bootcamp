@@ -1,0 +1,118 @@
+/*:root {
+  --main-bg-color: #fafafa;
+  --secondary-bg-color: #1e1823;
+  --text-color-white: #ffffff;
+  --text-color-dark: #111111;
+  --orange-color: #fd9222;
+}*/
+
+.reviews-big-title {
+  text-align: center;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 74px;
+}
+
+.review-accent {
+  color: #fd9222;
+}
+.reviews-list {
+  display: block;
+}
+
+.review-item {
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: block;
+  width: 335px;
+  height: 200px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding-left: 18px;
+  padding-bottom: 42px;
+  padding-right: 18px;
+  padding-top: 56px;
+  position: relative;
+}
+.review-item:last-child {
+  margin-bottom: 65px;
+}
+
+.review-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 18px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -175%);
+}
+.review-smale-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111111;
+  margin-bottom: 24px;
+}
+
+.review-text-p {
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.review-button {
+  margin: 0 auto;
+  color: #111111;
+  width: 165px;
+  height: 41px;
+  padding: 12px 28px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  display: block;
+}
+
+.review-button:focus,
+.review-button:hover {
+  color: #ffffff;
+  background: #fd9222;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-big-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .review-button {
+    width: 222px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .review-item {
+    width: 344px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews-big-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .review-item {
+    width: 360px;
+  }
+}
