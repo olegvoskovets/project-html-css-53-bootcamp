@@ -9,6 +9,12 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+/* ==цей сласс тут не використовуємо == */
+/* .container {
+    max-width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
+} */
 
 .products-title span {
   color: #fd9222;
