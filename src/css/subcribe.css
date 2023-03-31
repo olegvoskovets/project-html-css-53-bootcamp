@@ -6,6 +6,7 @@
     width:100%;
     padding: 62px 20px;
     background-size: cover;
+    background-color: rgba(17, 17, 17, 0.7);;
     background-image: url(../img/mobile/explore-our-new-chocolate-first-1-tel.png);
 } 
 @media (min-device-pixel-ratio: 2),
