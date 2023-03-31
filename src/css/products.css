@@ -6,13 +6,6 @@
     margin-right: auto;
 }
 
-.container {
-    max-width: 335px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-}
-
 .products-title span {
     color: var(--orange-color);
 }
@@ -124,12 +117,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1136px;
-        padding-left: 32px;
-        padding-right: 32px;
-        margin: 0 auto;
-    }
     .products {
         padding-top: 128px;
         padding-bottom: 128px;
@@ -143,12 +130,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px){ 
-    .container {
-        max-width: 704px;
-        padding-left: 32px;
-        padding-right: 32px;
-        margin: 0 auto;
-    }
     .products {
         padding-top: 100px;
         padding-bottom: 100px;
