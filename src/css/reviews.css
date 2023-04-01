@@ -5,7 +5,9 @@
   --text-color-dark: #111111;
   --orange-color: #fd9222;
 }*/
-
+.reviews {
+  padding-bottom: 72px;
+}
 .reviews-big-title {
   text-align: center;
   letter-spacing: -0.03em;
@@ -47,6 +49,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
   padding: 0px;
   gap: 18px;
   position: absolute;
@@ -93,6 +96,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .reviews {
+    padding-bottom: 100px;
+  }
   .reviews-big-title {
     font-size: 24px;
     line-height: 28px;
@@ -108,6 +114,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .reviews {
+    padding-bottom: 128px;
+  }
   .reviews-big-title {
     font-size: 24px;
     line-height: 28px;

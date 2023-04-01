@@ -35,6 +35,7 @@
   transform-style: preserve-3d;
   perspective: 800px;
   cursor: context-menu;
+  margin: 0 auto;
 }
 
 .unique-box-front,
