@@ -43,6 +43,19 @@
   background: #fcf1e0;
   color: #fd9222;
 }
+
+@media screen and (max-width: 375px) {
+  .top-sellers {
+    max-width: 375px;
+  }
+  .top-sellers-picture {
+    width: 100%;
+  }
+  /* .container {
+    position: relative;
+  } */
+}
+
 @media screen and (min-width: 768px) {
   .container {
     position: relative;
@@ -56,34 +69,30 @@
     margin-top: 32px;
   }
   .top-sellers-button {
-    
     position: absolute;
     right: 0px;
     bottom: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
- 
   .top-sellers-txt {
     position: absolute;
     max-width: 407px;
   }
   .top-sellers-button {
     position: static;
-   margin-right: 0;
+    margin-right: 0;
   }
 }
 .thank-you-modal {
   width: 516px;
   height: 414px;
-  background-color: #FD9222;
+  background-color: #fd9222;
   position: absolute;
   top: 50%;
   left: 50%;
   border-radius: 15px;
- transform: translate(-50%, -50%);
-  
- 
+  transform: translate(-50%, -50%);
 }
 .backdrop-thank-you {
   position: fixed;
@@ -104,41 +113,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #FCF1E0;
+  background: #fcf1e0;
   border-radius: 50%;
   border-color: transparent;
 }
 .thank-you-img {
-  position: absolute
-  ;
+  position: absolute;
   bottom: 0;
 }
 .thank-you-svg {
-  fill: #F16529;
- 
+  fill: #f16529;
 }
 .thank-you-title {
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: calc(28 / 24);
-letter-spacing: -0.02em;
-text-transform: uppercase;
-color: #FCF1E0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fcf1e0;
 }
 .thank-you-txt {
   display: block;
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: calc(24 / 18);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(24 / 18);
 
-letter-spacing: -0.02em;
-color: #FFFFFF;
-width: 309px;
-
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  width: 309px;
 }
 
 .thank-you-txt-block {

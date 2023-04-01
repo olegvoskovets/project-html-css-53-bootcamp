@@ -154,6 +154,11 @@
   flex-direction: column;
   gap: 20px;
 }
+@media screen and (max-width: 335px) {
+  .unique-components-img {
+    width: 100%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .unique-components {
