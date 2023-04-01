@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  background-image: url(../img/hero-chocolate-covered-cocoa-powder-tel.png);
+  background-image: url(../img/mobile/hero-chocolate-covered-cocoa-powder-tel.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -28,7 +28,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-view {
-    background-image: url(../hero-chocolate-covered-cocoa-powder-tel@2x.png);
+    background-image: url(../img/mobile/hero-chocolate-covered-cocoa-powder-tel@2x.jpg);
   }
 }
 
@@ -87,27 +87,29 @@
   color: #fd9222;
 }
 /* Посилання Scroll down */
-.hero-scroll {
+.hero-scroll-pic {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 32px;
   cursor: pointer;
-}
-.hero-scroll-text {
+  gap: 12px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.03em;
-  color: #fcf1e0;
+  color: #ffffff;
   margin-right: 12px;
   transition: color 250ms linear;
 }
-/*.hero-scroll-pic {
+.hero-circle-white {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  align-items: center;
 }
-.hero-scroll-icon {
-}
-/* доробити Scroll down */
 
 /* Планшет */
 @media screen and (min-width: 768px) {
@@ -116,7 +118,7 @@
     max-width: 704px;
     height: 890px;
     padding: 40px;
-    background-image: url(../img/hero-chocolate-covered-cocoa-powder-tablet.png);
+    background-image: url(../img/tablet/hero-chocolate-covered-cocoa-powder-tabl.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -136,7 +138,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-view {
-      background-image: url(../img/hero-chocolate-covered-cocoa-powder-tablet@2x.jpg);
+      background-image: url(../img/tablet/hero-chocolate-covered-cocoa-powder-tabl@2x.jpg);
     }
   }
   .hero-key-message {
@@ -149,19 +151,56 @@
     justify-content: start;
     align-items: center;
   }
+  .hero-scroll-pic {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+  }
 }
 /* Десктоп */
 @media screen and (min-width: 1200px) {
   .hero-view {
     max-width: 1036px;
     height: 600px;
-    background-image: url(../img/hero-chocolate-covered-cocoa-powder-comp.png);
+    background-image: url(../img/desktop/hero-chocolate-covered-cocoa-powder-comp.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-view {
-      background-image: url(../img/hero-chocolate-covered-cocoa-powderd-comp@2x.jpg);
+      background-image: url(../img/desktop/hero-chocolate-covered-cocoa-powder-comp@2x.jpg);
     }
+  }
+}
+
+/* (max-width : 375px){.hero-view {width: 100%; }}(min-width : 375px){.hero-view {width: 335px;margin:0 avto;padding: 0 20px}}(min-width : 768px){.hero-view {width: 704px;padding: 0 32px}}__(min-width : 1200px){.hero-view {width: 1136px;}}
+це з padding спробуєм */
+
+@media screen and (max-width: 375px) {
+  .hero-view {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .hero-view {
+    width: 335px;
+    margin: 0 avto;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-view {
+    width: 704px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-view {
+    width: 1136px;
   }
 }
