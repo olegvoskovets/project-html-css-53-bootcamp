@@ -77,7 +77,7 @@ li {
 }
 
 .advantages-item:not(:last-child) {
-    margin-bottom: 38px;
+    margin-bottom: 20px;
 }
 .advantages-item{
     padding-right: 28px;
