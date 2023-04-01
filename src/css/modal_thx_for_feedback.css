@@ -1,4 +1,6 @@
-.modal-form-for-feetback{
+.modal-form-for-feedback{
+    
+    position: relative;
     width: 311px;
     height: 350px;
     border-radius: 15px;
@@ -11,10 +13,21 @@
     padding-left: 58px;
     padding-bottom: 8px;
     padding-right: 24px;
-    margin-left: 200px;;
+    
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .modal-form-for-feedback{
+        background-image:
+            url(../img/mobile/orange-tel@2x.jpg);
+
+    }
+    
 }
 
-.modal-form-for-feetback-title{
+
+.modal-form-for-feedback-title{
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;      
@@ -23,17 +36,74 @@
     color: #FCF1E0;
     margin-bottom: 8px;
 }
-.thanks-feetback{
+.thanks-feedback{
     display: block;
 }
-.modal-form-for-feetback-text{
+.thanks-feedback-text{
+    display: block;
+}
+.modal-form-for-feedback-text{
     font-size: 14px;
     line-height: 1.1;
     color: var(--text-color-white);
     
 }
-.modal-form-feetback-img{
-    position: relative;
+.modal-form-feedback-img{    
     margin-bottom: 0;
         
 }
+.modal-close-feedback-btn{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    fill: var(--orange-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCF1E0;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+}
+/*.modal-close-feedback-btn {   
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+}*/
+.modal-close-feedback-btn:focus{
+    fill: #FCF1E0;
+    background-color: var(--orange-color);
+    border: 1px solid #FCF1E0;
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px){
+    .modal-form-for-feedback{
+        width: 516px;
+        height: 414px;
+        background-image: url(../img/tablet/thank-you-tablet.png);
+        padding-left: 163px;
+        padding-top: 170px;
+    }
+        .modal-close-feedback-btn{
+            width: 40px;
+            height: 40px;
+        }
+        .modal-close--feedback-button-icon{
+            width: 22px;
+            height: 22px;
+        }
+        .modal-form-for-feedback-title{
+            font-size: 24px;
+        }
+        .thanks-feedback-text {
+            display: inline;
+        }
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .modal-form-for-feedback{
+                    background-image: url(../img/tablet/thank-you-tablet@2x.png
+                    )}
+}
+}
+
