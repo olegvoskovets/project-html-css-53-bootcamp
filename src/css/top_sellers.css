@@ -44,13 +44,10 @@
   color: #fd9222;
 }
 @media screen and (min-width: 768px) {
-  .top-sellers-container {
-    max-width: 704px;
-    padding-bottom: 100px;
-  }
-  .top-sellers-container {
+  .container {
     position: relative;
   }
+
   .top-sellers-list {
     display: flex;
     gap: 16px;
@@ -59,22 +56,98 @@
     margin-top: 32px;
   }
   .top-sellers-button {
+    
     position: absolute;
-    right: -36px;
-    bottom: 180px;
+    right: 0px;
+    bottom: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .top-sellers-container {
-    max-width: 1136px;
-  }
+ 
   .top-sellers-txt {
     position: absolute;
     max-width: 407px;
   }
   .top-sellers-button {
-    position: absolute;
-    right: -34px;
-    bottom: 28px;
+    position: static;
+   margin-right: 0;
   }
+}
+.thank-you-modal {
+  width: 516px;
+  height: 414px;
+  background-color: #FD9222;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+ transform: translate(-50%, -50%);
+  
+ 
+}
+.backdrop-thank-you {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+.thank-you-closed-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FCF1E0;
+  border-radius: 50%;
+  border-color: transparent;
+}
+.thank-you-img {
+  position: absolute
+  ;
+  bottom: 0;
+}
+.thank-you-svg {
+  fill: #F16529;
+ 
+}
+.thank-you-title {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: calc(28 / 24);
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #FCF1E0;
+}
+.thank-you-txt {
+  display: block;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: calc(24 / 18);
+
+letter-spacing: -0.02em;
+color: #FFFFFF;
+width: 309px;
+
+}
+
+.thank-you-txt-block {
+  position: absolute;
+  left: 163px;
+  top: 154px;
+}
+.thank-you-closed-btn:hover,
+.thank-you-closed-btn:focus {
+  background-color: #ffffff;
+  fill: none;
 }
