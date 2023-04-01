@@ -168,10 +168,12 @@
 }
 .text-flex {
   position: absolute;
-  top: -2px;
+  top: 2px;
   left: 18px;
-  height: 24px;
+  height: 18px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 8px;
 }
 .tel-text {
@@ -303,14 +305,15 @@
   }
   .icon-input {
     width: 32px;
-    height: 32px;
+    height: 24px;
+    fill: #111111;
   }
   .tel-text {
     font-size: 18px;
   }
   .text-flex {
-    height: 32px;
-    top: -4px;
+    top: 0;
+    height: 24px;
   }
   .input-descrip-tel {
     padding-left: 117px;
