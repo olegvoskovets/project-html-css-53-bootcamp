@@ -1,0 +1,39 @@
+.modal-form-for-feetback{
+    width: 311px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: var(--orange-color);
+    background-image: url(../img/mobile/thank-you-tel.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    left:0;
+    padding-top: 84px;
+    padding-left: 58px;
+    padding-bottom: 8px;
+    padding-right: 24px;
+    margin-left: 200px;;
+}
+
+.modal-form-for-feetback-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;      
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FCF1E0;
+    margin-bottom: 8px;
+}
+.thanks-feetback{
+    display: block;
+}
+.modal-form-for-feetback-text{
+    font-size: 14px;
+    line-height: 1.1;
+    color: var(--text-color-white);
+    
+}
+.modal-form-feetback-img{
+    position: relative;
+    margin-bottom: 0;
+        
+}
