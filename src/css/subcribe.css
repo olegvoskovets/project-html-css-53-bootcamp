@@ -81,7 +81,7 @@
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
-.modal-subscribe {
+.modal_subscribe {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -139,10 +139,8 @@
   color: rgba(64, 64, 64, 0.3);
 }
 .subscribe-input-btn {
-    width: 100%;
+  width: 100%;
   position: relative;
- 
-
 }
 .subscribe-btn-modal {
   /* border: 1px solid var(--orange-color); */
@@ -152,14 +150,13 @@
   right: 0;
 }
 .modal-form-input-subscribe {
-   
-font-weight: 400;
-font-size: 14px;
-line-height: 1.2px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2px;
   width: 100%;
   height: 45px;
   outline: none;
-  border-radius:100px;
+  border-radius: 100px;
   padding: 14px 18px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   background-color: #e2e2e2;
@@ -204,21 +201,16 @@ line-height: 1.2px;
   .subscribe-input-btn {
     position: relative;
     display: flex;
- 
-}
-  .subscribe-btn-modal {
-position: absolute;
-align-items: center;
-margin-left: auto;
-flex-direction: row;
-
-  
-  
   }
-  .subscribe-modal-form{
+  .subscribe-btn-modal {
+    position: absolute;
+    align-items: center;
+    margin-left: auto;
+    flex-direction: row;
+  }
+  .subscribe-modal-form {
     display: flex;
-
-}
+  }
 
   .span-subscribe {
     font-family: 'Montserrat';
@@ -229,7 +221,6 @@ flex-direction: row;
     background-image: url(../img/desktop/explore-our-new-chocolate-first-1-comp.jpg);
   }
 
-
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -238,25 +229,24 @@ flex-direction: row;
     }
   }
   .modal-form-input-subscribe {
-   
     font-size: 18px;
-    line-height: 1.2px;}
-  
-  .modal-subscribe {
+    line-height: 1.2px;
+  }
+
+  .modal_subscribe {
     width: 538px;
     height: 412px;
     background-image: url(../img/tablet/explore-our-new-chocolate-first-tablet-2.jpg);
     padding-bottom: 40px;
-    padding-top: 236px; 
+    padding-top: 236px;
     padding-left: 40px;
     padding-right: 40px;
   }
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .modal-subscribe {
-    background-image: url(../img/tablet/explore-our-new-chocolate-first-tablet-2@2x.jpg);
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modal_subscribe {
+      background-image: url(../img/tablet/explore-our-new-chocolate-first-tablet-2@2x.jpg);
+    }
   }
-  }
-
 }
