@@ -15,18 +15,14 @@
     padding-right: 24px;
     
 }
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .modal-form-for-feedback{
-        background-image:
-            url(../img/mobile/orange-tel@2x.jpg);
-
-    }
-    
-}
-
-
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .modal-form-for-feedback {
+          background-image: url(../img/mobile/thank-you-tel@2x.png);
+      }
+  }
 .modal-form-for-feedback-title{
     font-weight: 600;
     font-size: 20px;
@@ -66,10 +62,9 @@
     height: 28px;
     border-radius: 50%;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*.modal-close-feedback-btn {   
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
-}*/
+
 .modal-close-feedback-btn:focus{
     fill: #FCF1E0;
     background-color: var(--orange-color);
@@ -99,11 +94,18 @@
             display: inline;
         }
         @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx){
                 .modal-form-for-feedback{
-                    background-image: url(../img/tablet/thank-you-tablet@2x.png
-                    )}
+                    background-image: url(../img/tablet/thank-you-tablet@2x.png); 
+                }
+                }
+            }
+@media screen and (min-width:1200px){
+.modal-close-feedback-btn:hover {
+    fill: #FCF1E0;
+    background-color: var(--orange-color);
+    border: 1px solid #FCF1E0;
 }
 }
-
