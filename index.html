@@ -20,12 +20,136 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/project-html-css-53-bootcamp/assets/index-6f77ec51.js"></script>
-    <link rel="stylesheet" href="/project-html-css-53-bootcamp/assets/index-221a07f9.css">
+    <script type="module" crossorigin src="/project-html-css-53-bootcamp/assets/index-c790c6fd.js"></script>
+    <link rel="stylesheet" href="/project-html-css-53-bootcamp/assets/index-1bed53c2.css">
   </head>
 
   <body>
-    <!-- <h1>header</h1> -->
+    <header class="header">
+  <div class="container header-container">
+    <nav class="menu-navigation">
+      <a class="logo link-none" href="./index.html"
+        >SIMPLY CHOCOLATE
+        <svg class="logo-icon" width="21" height="21">
+          <use href="/project-html-css-53-bootcamp/assets/symbol-defs-1bc809e7.svg#icon-chocolate"></use>
+        </svg>
+        <svg class="logo-icon-desktop" width="24" height="24">
+          <use href="/project-html-css-53-bootcamp/assets/symbol-defs-1bc809e7.svg#icon-chocolate"></use>
+        </svg>
+      </a>
+      <button
+        class="mobile-menu-btn js-open-menu"
+        aria-expanded="false"
+        type="button"
+      >
+        <svg class="mobile-menu-icon" width="40" height="40">
+          <use href="/project-html-css-53-bootcamp/assets/symbol-defs-1bc809e7.svg#icon-menu-mobile"></use>
+        </svg>
+      </button>
+      <ul class="menu-list list">
+        <li class="menu-item">
+          <a class="menu-link link-none" href="./index.html">Home</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link link-none" href="#how-its-made">How it’s made?</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link link-none" href="#products">Our products</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link link-none" href="#sellers">Top sellers</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link link-none" href="#review">Chocolate is loved</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="menu-list-social list">
+      <li class="menu-social-item">
+        <a
+          class="menu-social-link"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="link to instagram"
+          ><svg class="desktop-social-icon" width="24" height="24">
+            <use href="/project-html-css-53-bootcamp/assets/symbol-defs-1bc809e7.svg#icon-insta"></use></svg
+        ></a>
+      </li>
+      <li class="menu-social-item">
+        <a
+          class="menu-social-link"
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="link to twitter"
+          ><svg class="desktop-social-icon" width="24" height="24">
+            <use href="/project-html-css-53-bootcamp/assets/symbol-defs-1bc809e7.svg#icon-twit"></use></svg
+        ></a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============= mobile-menu ================ -->
+
+<div class="mobile-menu js-menu-container">
+  <button class="mobile-menu-close-btn js-close-menu" type="button">
+    <svg class="mobile-menu-close-icon" width="12" height="12">
+      <use href="../img/symbol-defs.svg#icon-menu-close"></use>
+    </svg>
+  </button>
+  <div class="mobile-navigation">
+    <ul class="mobile-menu-list list">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link-none" href="./index.html">Home</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link-none" href="#how-its-made"
+          >How it’s made?</a
+        >
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link-none" href="#products">Our products</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link-none" href="#sellers">Top sellers</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link-none" href="#review"
+          >Chocolate is loved</a
+        >
+      </li>
+    </ul>
+    <ul class="mobile-social-list list">
+      <li class="mobile-social-item">
+        <a
+          class="mobile-social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="link to instagram"
+          href="https://www.instagram.com/"
+          ><svg class="mobile-social-icon" width="22" height="22">
+            <use href="/project-html-css-53-bootcamp/assets/symbol-defs-1bc809e7.svg#icon-insta"></use></svg
+        ></a>
+      </li>
+      <li class="mobile-social-item">
+        <a
+          class="mobile-social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="link to twitter"
+          href="https://twitter.com/"
+        >
+          <svg class="mobile-social-icon" width="22" height="22">
+            <use href="/project-html-css-53-bootcamp/assets/symbol-defs-1bc809e7.svg#icon-twit"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- <script defer src="./js/mobile-menu.js"></script> -->
 
     <main>
       <section class="hero-section">
@@ -53,7 +177,7 @@
           >scroll down
           <span class="hero-circle-white">
             <svg class="hero-scroll-icon" width="40" height="20">
-              <use href="/project-html-css-53-bootcamp/assets/symbol-defs-978446fc.svg#icon-angle"></use>
+              <use href="/project-html-css-53-bootcamp/assets/symbol-defs-1bc809e7.svg#icon-angle"></use>
             </svg>
           </span>
         </a>
@@ -69,7 +193,7 @@
       <li class="advantages-item">
         <div class="advantages-icon">
           <svg width="32" height="32">
-            <use href="/project-html-css-53-bootcamp/assets/symbol-defs-978446fc.svg#icon-half-covered-chocolat"></use>
+            <use href="/project-html-css-53-bootcamp/assets/symbol-defs-1bc809e7.svg#icon-half-covered-chocolat"></use>
           </svg>
         </div>
         <div class="advantages-wrapper">
@@ -85,7 +209,7 @@
       <li class="advantages-item">
         <div class="advantages-icon">
           <svg width="32" height="32">
-            <use href="/project-html-css-53-bootcamp/assets/symbol-defs-978446fc.svg#icon-coin"></use>
+            <use href="/project-html-css-53-bootcamp/assets/symbol-defs-1bc809e7.svg#icon-coin"></use>
           </svg>
         </div>
         <div class="advantages-wrapper">
@@ -103,7 +227,7 @@
       <li class="advantages-item">
         <div class="advantages-icon">
           <svg width="32" height="32">
-            <use href="/project-html-css-53-bootcamp/assets/symbol-defs-978446fc.svg#icon-spoon"></use>
+            <use href="/project-html-css-53-bootcamp/assets/symbol-defs-1bc809e7.svg#icon-spoon"></use>
           </svg>
         </div>
         <div class="advantages-wrapper">
@@ -178,7 +302,7 @@
                 chocolate. Chocolate was originally sold and consumed as a
                 beverage in pre-Columbian times. Although four-fifths of all
                 milk chocolate is sold in the United States and Europe,
-                increasingly large amounts are
+                increasingly
               </p>
             </div>
           </div>
@@ -337,7 +461,7 @@
   </div>
 </section>
 
-      <section class="how-its-made-section">
+      <section id="how-its-made" class="how-its-made-section">
   <div class="container container-how-its-made">
     <h2 class="how-its-made-title">
       how it's <span class="how-its-made-title-ogange">made?</span>
@@ -381,7 +505,7 @@
   </div>
 </section>
 
-      <section class="products">
+      <section id="products" class="products">
   <div class="container">
     <h2 class="products-title">Our <span>Products</span></h2>
     <div class="swiper">
@@ -504,7 +628,7 @@
   <!-- <div class="swiper-pagination"></div> -->
 </section>
 
-      <section class="top-sellers">
+      <section id="sellers" class="top-sellers">
   <div class="container">
     <h2 class="products-title top-sellers-title">Top <span>Sellers</span></h2>
     <ul class="list top-sellers-list">
@@ -579,7 +703,7 @@
   </div>
 </section>
 
-      <section class="reviews">
+      <section id="review" class="reviews">
   <div class="container">
     <h2 class="reviews-big-title">
       <span class="review-accent">chocolate</span> is loved
@@ -736,7 +860,7 @@
         <button type="button" class="subscribe-modal-close-btn" data-modal-close>
             <svg class="subscribe-modal-close-btn-icon">
               <use
-                href="/project-html-css-53-bootcamp/assets/symbol-defs-978446fc.svg#icon-close-btn-x"
+                href="/project-html-css-53-bootcamp/assets/symbol-defs-1bc809e7.svg#icon-close-btn-x"
                 width="12"
                 hight="12"
               ></use>
@@ -862,9 +986,8 @@
 </footer>
 
 
-
+    <script src="./js/mobile-menu.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
   </body>
 </html>
