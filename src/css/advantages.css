@@ -161,6 +161,7 @@ li {
 
     }
         .advantages-border {
+            display: inline-block;
             border-right: 1px solid #8e8b91;
             height: 124px;
             margin-top: 60px;
