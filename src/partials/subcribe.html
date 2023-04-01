@@ -9,49 +9,47 @@
         each piece is a work of art that is sure to please.
       </p>
     </div>
-    <button  class="subscribe-btn"   type="button" data-modal-open>Subscribe</button>
+    <button class="subscribe-btn" type="button" data-modal-open>
+      Subscribe
+    </button>
   </div>
-  </section> 
-  <!-- is-hidden -->
-  
-  <div class="backdrop-subscribe     " data-modal> 
-    <div class="modal-subscribe">
-        <button type="button" class="subscribe-modal-close-btn" data-modal-close>
-            <svg class="subscribe-modal-close-btn-icon">
-              <use
-                href="./img/symbol-defs.svg#icon-close-btn-x"
-                width="12"
-                hight="12"
-              ></use>
-            </svg>
-          </button> 
-          <h2 class=" modal-title-subscribe">
-            Explore our <samp class="span-subscribe">new chocolate</samp> first!
-          </h2>
-         <div class="subscribe-input-btn">
-              <form class="subscribe-modal-form">
-              <label class="subscribe-modal-form-field">
-                <span class=" subscribe-form-input-desc">
-                  <input
-                    type="email"
-                    name="user-mail"
-                    placeholder="Enter your email"
-                    class="modal-form-input-subscribe"
-                    required
-                    pattern="5"
-                    />
-                </span>         
-              </label>
-            <button type="submit" class="subscribe-btn subscribe-btn-modal">Submit</button>
-          </form>
-         </div>
-    
-   </div>
- </div>
+</section>
+<!-- is-hidden -->
 
- <script src="./js/modal.js"></script>
+<div class="backdrop-subscribe is-hidden" data-modal>
+  <div class="modal-subscribe">
+    <button type="button" class="subscribe-modal-close-btn" data-modal-close>
+      <svg class="subscribe-modal-close-btn-icon">
+        <use
+          href="./img/symbol-defs.svg#icon-close-btn-x"
+          width="12"
+          hight="12"
+        ></use>
+      </svg>
+    </button>
+    <h2 class="modal-title-subscribe">
+      Explore our <samp class="span-subscribe">new chocolate</samp> first!
+    </h2>
+    <div class="subscribe-input-btn">
+      <form class="subscribe-modal-form">
+        <label class="subscribe-modal-form-field">
+          <span class="subscribe-form-input-desc">
+            <input
+              type="email"
+              name="user-mail"
+              placeholder="Enter your email"
+              class="modal-form-input-subscribe"
+              required
+              pattern="5"
+            />
+          </span>
+        </label>
+        <button type="submit" class="subscribe-btn subscribe-btn-modal">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
 
-
- 
-     
-     
+<!-- <script type="module" src="../js/modal_explore_our_new.js"></script> -->
