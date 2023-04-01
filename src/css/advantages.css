@@ -5,8 +5,9 @@
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  padding: 20px;
 }
 
 .advantages-title {
@@ -39,8 +40,17 @@
 .advantages-wrapper {
   width: 336px;
 }
+@media screen and (max-width: 375px) {
+  .advantages-section {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages-section {
+    padding: 50px 32px;
+  }
   .advantages-item {
     padding-right: 0;
   }

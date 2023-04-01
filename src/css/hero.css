@@ -1,6 +1,5 @@
 .hero-section {
   padding-bottom: 50px;
-  background-color: #e2e2e2;
 }
 .visually-hiden {
   position: absolute;
@@ -13,6 +12,8 @@
   clip: rect(0 0 0 0);
 }
 .hero-view {
+  margin-left: auto;
+  margin-right: auto;
   height: 621px;
   padding: 20px 20px;
   display: flex;
@@ -180,7 +181,7 @@
 
 @media screen and (max-width: 375px) {
   .hero-view {
-    width: 100%;
+    max-width: 335px;
   }
 }
 
@@ -188,14 +189,13 @@
   .hero-view {
     width: 335px;
     margin: 0 avto;
-    padding: 0 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-view {
     width: 704px;
-    padding: 0 32px;
+    /* padding: 0 32px; */
   }
 }
 
