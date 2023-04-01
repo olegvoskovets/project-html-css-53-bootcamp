@@ -148,6 +148,79 @@
         </p>
       </li>
     </ul>
-    <button class="review-button">Leave a review</button>
+    <button class="review-button" type="button" leave_a_review_about-open>
+      Leave a review
+    </button>
   </div>
 </section>
+
+<!-- MODAL -->
+<div class="backdrop is-hidden" leave_a_review_about-modal>
+  <div class="modal_reviews" leave_a_review_about-modal>
+    <button type="button" class="close-btn-reviews" leave_a_review_about-close>
+      <svg class="modal-close-icon-reviews" width="12" height="12">
+        <use href="../img/symbol-defs.svg#close-modal"></use>
+      </svg>
+    </button>
+    <h2 class="reviews-form-title">
+      leave a review about
+      <span class="reviews-form-title-orang"> our chocolate </span>
+    </h2>
+    <form class="form-modal">
+      <div class="form-inputs">
+        <label class="form-label">
+          <input
+            type="text"
+            name="user_name"
+            class="input-descrip"
+            required
+            pattern="^[a-zA-Zа-яА-Я]+$"
+            minlength="2"
+            placeholder="Name"
+          />
+        </label>
+
+        <label class="form-label">
+          <input
+            type="email"
+            name="user_email"
+            class="input-descrip"
+            required
+            placeholder="Enter your email"
+          />
+        </label>
+
+        <label class="form-label">
+          <span class="input-relative">
+            <input
+              type="tel"
+              name="user_phone"
+              class="input-descrip input-descrip-tel"
+              required
+              pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+              placeholder="Phone number"
+            />
+            <span class="text-flex">
+              <svg class="icon-input" width="24" height="24">
+                <use href="../img/symbol-defs.svg#frame"></use>
+              </svg>
+              <span class="tel-text">+380</span>
+            </span>
+          </span>
+        </label>
+
+        <label class="form-label">
+          <textarea
+            name="user_comment"
+            class="user-comment"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+      </div>
+
+      <button type="submit" class="modal-form-btn-reviews">Send</button>
+    </form>
+  </div>
+</div>
+<script src="../js/leave_a_review_about.js"></script>
