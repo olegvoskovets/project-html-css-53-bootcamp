@@ -168,10 +168,12 @@
 }
 .text-flex {
   position: absolute;
-  top: -2px;
+  top: 2px;
   left: 18px;
-  height: 24px;
+  height: 18px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 8px;
 }
 .tel-text {
@@ -204,6 +206,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
+  background-color: #e2e2e2;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -214,8 +217,8 @@
 }
 .close-btn-reviews:hover,
 .close-btn-reviews:focus {
-  background-color: var(--orange-color);
-  fill: #ffffff;
+  /* background-color: var(--orange-color); */
+  fill: var(--orange-color);
 }
 .modal-form-btn-reviews {
   padding: 12px 28px;
@@ -303,14 +306,15 @@
   }
   .icon-input {
     width: 32px;
-    height: 32px;
+    height: 24px;
+    fill: #111111;
   }
   .tel-text {
     font-size: 18px;
   }
   .text-flex {
-    height: 32px;
-    top: -4px;
+    top: 0;
+    height: 24px;
   }
   .input-descrip-tel {
     padding-left: 117px;
