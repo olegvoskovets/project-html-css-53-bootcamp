@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css"
+    />
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,8 +24,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/project-html-css-53-bootcamp/assets/index-3a3ce14c.js"></script>
-    <link rel="stylesheet" href="/project-html-css-53-bootcamp/assets/index-fcecb86d.css">
+    <script type="module" crossorigin src="/project-html-css-53-bootcamp/assets/index-1919ddab.js"></script>
+    <link rel="stylesheet" href="/project-html-css-53-bootcamp/assets/index-335bc2b2.css">
   </head>
 
   <body>
@@ -464,13 +468,21 @@
     </h2>
     <div class="how-its-made-wrapper">
       <div class="how-its-made-video-wrapper">
-        <button type="button" class="how-its-made-play-btn">
+        <div class="features-video plyr__video-embed" id="features-player">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/2H0tglcIKsM?autoplay=0&modestbranding=1&controls=0&disablekb=1&playsinline=1&cc_load_policy=1&cc_lang_pref=auto&widget_referrer=https%3A%2F%2Fplyr.io%2F%23youtube&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&customControls=true&noCookie=false&enablejsapi=1&origin=https%3A%2F%2Fplyr.io&widgetid=1"
+            allowfullscreen
+            allowtransparency
+            allow="autoplay"
+          ></iframe>
+        </div>
+        <!-- <button type="button" class="how-its-made-play-btn">
           <div class="how-its-made-play-circle">
             <svg class="how-its-made-play-icon">
-              <use href="../img/symbol-defs.svg#icon-play"></use>
+              <use href="./img/symbol-defs.svg#icon-play"></use>
             </svg>
           </div>
-        </button>
+        </button> -->
       </div>
       <div class="how-its-made-text-wrapper">
         <h3 class="how-its-made-list-title">
@@ -1153,6 +1165,8 @@
     <button class="close_btn ">X</button>
 </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
