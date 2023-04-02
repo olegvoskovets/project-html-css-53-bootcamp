@@ -4,6 +4,7 @@
     closeModalBtn: document.querySelector('[leave_a_review-modal-close]'),
     modal: document.querySelector('[leave_a_review-modal]'),
   };
+  console.log('OOOOOOO');
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);

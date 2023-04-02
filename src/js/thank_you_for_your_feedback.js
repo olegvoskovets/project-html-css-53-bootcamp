@@ -7,13 +7,16 @@
     closeModalBtn: document.querySelector(
       '[thank_you_for_your_feedback-close]'
     ),
-    modal_reviews: document.querySelector('[thank_you_for_your_feedbac-modal]'),
+    modal_form_for_feedback: document.querySelector(
+      '[thank_you_for_your_feedbac-modal]'
+    ),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal_reviews.classList.toggle('is-hidden');
+    console.log('open / close');
+    refs.modal_form_for_feedback.classList.toggle('is-hidden-hidden');
   }
 })();
