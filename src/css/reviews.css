@@ -39,14 +39,13 @@
   padding-right: 18px;
   padding-top: 56px;
   position: relative;
-  margin-bottom: 10px;
 }
 .review-item:hover {
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
 }
-.review-item:last-child {
+/*.review-item:last-child {
   margin-bottom: 65px;
-}
+}*/
 
 .review-img {
   display: flex;
@@ -76,6 +75,7 @@
   text-align: center;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
+  min-width: 312px;
 }
 
 .review-button {
@@ -242,7 +242,121 @@
     width: 100%;
   }
 }
+/* =====================SLIDER ====================*/
+ul {
+  list-style-type: none;
+}
+.wrapper {
+  height: 100%;
+  padding-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+@media (min-width: 375px) {
+  .wrapper {
+    padding: 50px 10px;
+  }
+}
+*/
+/* Основные стили */
 
+/* Слайдер */
+.slick-slider {
+  min-width: 0;
+}
+.slick-slider::marker {
+  visibility: none;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  height: 285px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Конкретный слайдер */
+.slider {
+  position: relative;
+}
+
+/*@media (min-width: 767px) {
+  .slider {
+    padding: 0px 40px;
+  }
+}*/
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+}
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+}
+.slider .slick-dots button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  background-color: rgba(17, 17, 17, 0.1);
+  border-radius: 50%;
+  border: transparent;
+}
+
+.slider .slick-dots li.slick-active button {
+  width: 28px;
+  background-color: #fd9222;
+
+  border-radius: 10px;
+}
+
+.slider__item {
+  /*padding: 0px 15px;*/
+  text-decoration: none;
+}
+.slider__item img {
+  max-width: 100%;
+}
+.slider__item.slick-center {
+}
+.reviews-list {
+  display: block;
+}
+.slider__item.slick-slide::marker {
+  display: none;
+}
+.slick-slider::marker {
+  display: none;
+}
 /* =====================MODAL ====================*/
 .backdrop {
   position: fixed;
