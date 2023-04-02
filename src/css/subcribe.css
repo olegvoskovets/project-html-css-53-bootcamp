@@ -81,7 +81,11 @@
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
+<<<<<<< Updated upstream
 .modal_subscribe {
+=======
+.modal-subscribe {
+>>>>>>> Stashed changes
   position: absolute;
   top: 50%;
   left: 50%;
@@ -97,7 +101,11 @@
   padding-top: 201px;
   padding-left: 24px;
   padding-right: 24px;
+<<<<<<< Updated upstream
   /* background-color:  rgba(0, 0, 0, 0.5); */
+=======
+  background-color: rgba(0, 0, 0, 0.5);
+>>>>>>> Stashed changes
 }
 
 .subscribe-modal-close-btn-icon {
@@ -161,7 +169,10 @@
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   background-color: #e2e2e2;
   transition: border-color 250ms linear;
+<<<<<<< Updated upstream
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+=======
+>>>>>>> Stashed changes
 }
 
 /* ==========@media screen=============================================================== */
@@ -233,7 +244,11 @@
     line-height: 1.2px;
   }
 
+<<<<<<< Updated upstream
   .modal_subscribe {
+=======
+  .modal-subscribe {
+>>>>>>> Stashed changes
     width: 538px;
     height: 412px;
     background-image: url(../img/tablet/explore-our-new-chocolate-first-tablet-2.jpg);
@@ -245,7 +260,11 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+<<<<<<< Updated upstream
     .modal_subscribe {
+=======
+    .modal-subscribe {
+>>>>>>> Stashed changes
       background-image: url(../img/tablet/explore-our-new-chocolate-first-tablet-2@2x.jpg);
     }
   }

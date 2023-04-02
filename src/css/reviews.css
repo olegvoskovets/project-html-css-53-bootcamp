@@ -31,7 +31,7 @@
   width: 335px;
   height: 200px;
   border: 1px solid rgba(17, 17, 17, 0.1);
-  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+
   border-radius: 15px;
   background-color: #ffffff;
   padding-left: 18px;
@@ -39,6 +39,10 @@
   padding-right: 18px;
   padding-top: 56px;
   position: relative;
+  margin-bottom: 10px;
+}
+.review-item:hover {
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
 }
 .review-item:last-child {
   margin-bottom: 65px;
@@ -87,12 +91,156 @@
   line-height: 17px;
   text-align: center;
   display: block;
+  /* transition: background-color 250ms linear, color 250ms linear; */
 }
 
 .review-button:focus,
 .review-button:hover {
   color: #ffffff;
-  background: #fd9222;
+  background-color: #fd9222;
+}
+
+/* MODAL Leave a review about our chocolate */
+
+.modal {
+  position: relative;
+  width: 312px;
+  height: 472px;
+  background-color: #e2e2e2;
+  border-radius: 15px;
+  padding: 32px 24px;
+}
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #e2e2e2;
+  transition: background-color 250ms linear, fill 250ms linear;
+}
+.close-btn:hover,
+.close-btn:focus {
+  border: none;
+  background-color: var(--orange-color);
+  fill: #e2e2e2;
+}
+.leave-title {
+  width: 255px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 32px;
+}
+.leave-title-orang {
+  color: var(--orange-color);
+}
+.input-descrip {
+  width: 100%;
+  height: 45px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000;
+  padding: 10px 18px 10px 18px;
+  border-radius: 8px;
+  outline: none;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  margin-bottom: 14px;
+  background-color: #e2e2e2;
+}
+.input-descrip-left {
+  padding-left: 92px;
+}
+.user-comment {
+  resize: none;
+  width: 100%;
+  height: 91px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000;
+  border-radius: 8px;
+  padding: 14px 18px;
+  outline: none;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  margin-bottom: 18px;
+  background-color: #e2e2e2;
+}
+
+.input-descrip::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.input-descrip-left::placeholder {
+  border-left: 1px solid rgba(64, 64, 64, 0.3);
+  padding-left: 14px;
+}
+.input-descrip:focus {
+  /* outline: none; */
+  box-shadow: (0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+}
+.position-relative {
+  position: relative;
+}
+.icon-input {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.icon-input-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #000000;
+  padding-right: 8px;
+  /* border-right: 1px solid rgba(64, 64, 64, 0.3); */
+}
+.user-comment::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.leave-modal-btn {
+  padding: 12px 28px;
+  border: 1px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  border-radius: 100px;
+  color: var(--text-color-white);
+  background-color: var(--orange-color);
+  transition: background-color 0.25s linear;
+}
+.leave-modal-btn:hover,
+.leave-modal-btn:focus {
+  color: var(--orange-color);
+  background-color: #fcf1e0;
+}
+@media screen and (max-width: 375px) {
+  .modal {
+    width: 100%;
+  }
 }
 
 /* =====================MODAL ====================*/
@@ -265,11 +413,16 @@
   .review-item {
     width: 344px;
   }
+<<<<<<< Updated upstream
   .modal_reviews {
+=======
+  .modal {
+>>>>>>> Stashed changes
     width: 517px;
     height: 631px;
     padding: 40px;
   }
+<<<<<<< Updated upstream
   .reviews-form-title {
     width: 298px;
     font-weight: 600;
@@ -325,6 +478,65 @@
   .modal-form-btn-reviews {
     padding: 14px 40px;
   }
+=======
+  .close-btn {
+    top: 24px;
+    right: 24px;
+  }
+  .leave-title {
+    width: 298px;
+    margin-bottom: 40px;
+  }
+  .input-descrip {
+    height: 66px;
+    margin-bottom: 19px;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 17px 24px;
+  }
+  .user-comment {
+    height: 137px;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 17px 24px;
+  }
+  .leave-modal-btn {
+    padding: 14px 40px;
+  }
+  .icon-input-title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .input-descrip::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .user-comment::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .input-descrip-left {
+    padding-left: 150px;
+  }
+  .input-descrip-left::placeholder {
+    padding-left: 28px;
+  }
+  .icon-input {
+    left: 28;
+    gap: 18px;
+  }
+  .leave-title {
+    font-size: 24px;
+  }
+  .icon-width-heidht {
+    width: 32px;
+    height: 24px;
+  }
+  .close-btn {
+    width: 28px;
+    height: 28px;
+  }
+>>>>>>> Stashed changes
 }
 @media screen and (min-width: 1200px) {
   .reviews {
@@ -336,5 +548,26 @@
   }
   .review-item {
     width: 360px;
+  }
+  .modal {
+    width: 676px;
+    height: 631px;
+    padding: 40px;
+  }
+  .input-descrip {
+    height: 66px;
+    margin-bottom: 19px;
+
+    padding: 22px 24px;
+  }
+  .input-descrip-left {
+    padding-left: 150px;
+  }
+  .input-descrip-left::placeholder {
+    padding-left: 28px;
+  }
+  .user-comment {
+    height: 137px;
+    padding: 22px 24px;
   }
 }
