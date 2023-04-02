@@ -28,11 +28,8 @@
   gap: 14px;
   margin-left: auto;
 }
-.footer-social-icon-inst {
+.footer-social-icon {
   fill: currentColor;
-}
-.footer-social-icon-twitter {
-  stroke: currentColor;
 }
 .footer-social-list-link {
   display: flex;
