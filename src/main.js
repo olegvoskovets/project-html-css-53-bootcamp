@@ -8,3 +8,4 @@ import './js/buy_now_hero.js';
 import './js/video.js';
 import './js/slick.min.js';
 import './js/script.js';
+import './js/buy_now_sellers.js';

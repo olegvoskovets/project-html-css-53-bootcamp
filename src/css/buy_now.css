@@ -67,19 +67,18 @@
   color: #111111;
 }
 
-/* :root {
+:root {
   --swiper-pagination-bullet-horizontal-gap: 7px;
   --swiper-pagination-bullet-width: 13px;
   --swiper-pagination-bullet-active-width: 28px;
   --swiper-pagination-bullet-height: 13px;
   --swiper-pagination-bullet-inactive-color: rgba(17, 17, 17, 0.9);
   --swiper-pagination-color: rgba(253, 146, 34, 1);
-  --swiper-pagination-top: 521px;
+  --swiper-pagination-top: 520px;
   --swiper-pagination-bottom: 0px;
 }
 .swiper-pagination {
-  position: absolute;
-  z-index: 3;
+  position: static;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -87,7 +86,7 @@
   background-size: contain;
   border-radius: 40px;
   transition: background 250ms linear, opacity 250ms linear;
-} */
+}
 
 /* =============== form ============ */
 .form-buy-now {
