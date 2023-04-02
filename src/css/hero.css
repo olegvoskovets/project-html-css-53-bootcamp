@@ -46,7 +46,7 @@
 .hero-ref {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  column-gap: 14px;
   align-items: center;
 }
 .hero-buy-btn {
@@ -128,7 +128,6 @@
   .hero-buy-btn {
     width: 183px;
     height: 45px;
-    margin-right: 14px;
   }
   .hero-made {
     width: 183px;
