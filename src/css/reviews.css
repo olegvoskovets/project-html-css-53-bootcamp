@@ -413,16 +413,11 @@
   .review-item {
     width: 344px;
   }
-<<<<<<< Updated upstream
   .modal_reviews {
-=======
-  .modal {
->>>>>>> Stashed changes
     width: 517px;
     height: 631px;
     padding: 40px;
   }
-<<<<<<< Updated upstream
   .reviews-form-title {
     width: 298px;
     font-weight: 600;
@@ -478,65 +473,6 @@
   .modal-form-btn-reviews {
     padding: 14px 40px;
   }
-=======
-  .close-btn {
-    top: 24px;
-    right: 24px;
-  }
-  .leave-title {
-    width: 298px;
-    margin-bottom: 40px;
-  }
-  .input-descrip {
-    height: 66px;
-    margin-bottom: 19px;
-    font-weight: 400;
-    font-size: 18px;
-    padding: 17px 24px;
-  }
-  .user-comment {
-    height: 137px;
-    font-weight: 400;
-    font-size: 18px;
-    padding: 17px 24px;
-  }
-  .leave-modal-btn {
-    padding: 14px 40px;
-  }
-  .icon-input-title {
-    font-weight: 500;
-    font-size: 18px;
-  }
-  .input-descrip::placeholder {
-    font-weight: 400;
-    font-size: 18px;
-  }
-  .user-comment::placeholder {
-    font-weight: 400;
-    font-size: 18px;
-  }
-  .input-descrip-left {
-    padding-left: 150px;
-  }
-  .input-descrip-left::placeholder {
-    padding-left: 28px;
-  }
-  .icon-input {
-    left: 28;
-    gap: 18px;
-  }
-  .leave-title {
-    font-size: 24px;
-  }
-  .icon-width-heidht {
-    width: 32px;
-    height: 24px;
-  }
-  .close-btn {
-    width: 28px;
-    height: 28px;
-  }
->>>>>>> Stashed changes
 }
 @media screen and (min-width: 1200px) {
   .reviews {
