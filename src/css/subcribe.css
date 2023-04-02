@@ -27,24 +27,28 @@
   font-weight: 600;
   font-size: 20px;
   line-height: calc(24 / 20);
+  letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 24px;
   color: var(--text-color-white);
 }
+
 .modal-title-subscribe {
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
+  line-height: calc(24 / 20);
   text-transform: uppercase;
   color: var(--text-color-dark);
   margin-bottom: 24px;
+  letter-spacing: -0.03em;
 }
 
 .span-subscribe {
   font-family: 'Montserrat';
   color: var(--orange-color);
 }
+
 .text-subscribe {
   font-weight: 400;
   font-size: 14px;
@@ -101,22 +105,25 @@
 }
 
 .subscribe-modal-close-btn-icon {
-  height: 12px;
-  width: 12px;
+    width: 12px;
+    height: 12px;
   transition: fill 250ms linear;
   fill: var(--text-color-white);
 }
 
 .subscribe-modal-close-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
   border: transparent;
   padding: 0;
+
+  height: 24px;
+  width: 24px;
 }
 
 .subscribe-modal-close-btn-icon:hover,
@@ -189,13 +196,25 @@
     max-width: 378px;
     margin-left: auto;
     margin-right: auto;
+    
   }
+  .subscribe-modal-close-btn {
+      top: 24px;
+    right: 24px;
+    height: 28px;
+  width: 28px;
+  }
+  .subscribe-modal-close-btn-icon {
+    height:14px;
+    width: 14px
+  }
+
   .box-subscribe {
     max-width: 467px;
   }
   .modal-title-subscribe {
     font-size: 24px;
-    line-height: 1.17;
+    line-height: calc(28 / 24) ;
     margin-bottom: 28px;
   }
   .subscribe-input-btn {
