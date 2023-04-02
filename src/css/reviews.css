@@ -373,7 +373,7 @@ ul {
   position: relative;
   width: 311px;
   height: 471px;
-  background-color: #e2e2e2;
+  background-color: #fafafa;
   border-radius: 15px;
   top: 50%;
   left: 50%;
@@ -389,7 +389,7 @@ ul {
   letter-spacing: -0.02em;
   color: #000000;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  background-color: #e2e2e2;
+  background-color: #FAFAFA;
   padding: 14px 18px;
   outline: none;
   margin-bottom: 14px;
@@ -450,7 +450,7 @@ ul {
   resize: none;
   width: 100%;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  background-color: #e2e2e2;
+  background-color: #FAFAFA;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -467,7 +467,7 @@ ul {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #e2e2e2;
+  background-color: #FAFAFA;
   display: flex;
   justify-items: center;
   align-items: center;

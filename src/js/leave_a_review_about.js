@@ -5,6 +5,15 @@
     modal_reviews: document.querySelector('[leave_a_review_about-modal]'),
   };
 
+  console.log(
+    'closeModalBtn= ',
+    closeModalBtn,
+    'openModalBtn=  ',
+    openModalBtn,
+    'modal_reviews=  ',
+    modal_reviews
+  );
+
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
