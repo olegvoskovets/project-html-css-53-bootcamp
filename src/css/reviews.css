@@ -31,7 +31,7 @@
   width: 335px;
   height: 200px;
   border: 1px solid rgba(17, 17, 17, 0.1);
-  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+
   border-radius: 15px;
   background-color: #ffffff;
   padding-left: 18px;
@@ -40,9 +40,12 @@
   padding-top: 56px;
   position: relative;
 }
-.review-item:last-child {
-  margin-bottom: 65px;
+.review-item:hover {
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
 }
+/*.review-item:last-child {
+  margin-bottom: 65px;
+}*/
 
 .review-img {
   display: flex;
@@ -72,6 +75,7 @@
   text-align: center;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
+  min-width: 312px;
 }
 
 .review-button {
@@ -87,14 +91,272 @@
   line-height: 17px;
   text-align: center;
   display: block;
+  /* transition: background-color 250ms linear, color 250ms linear; */
 }
 
 .review-button:focus,
 .review-button:hover {
   color: #ffffff;
-  background: #fd9222;
+  background-color: #fd9222;
 }
 
+/* MODAL Leave a review about our chocolate */
+
+.modal {
+  position: relative;
+  width: 312px;
+  height: 472px;
+  background-color: #e2e2e2;
+  border-radius: 15px;
+  padding: 32px 24px;
+}
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #e2e2e2;
+  transition: background-color 250ms linear, fill 250ms linear;
+}
+.close-btn:hover,
+.close-btn:focus {
+  border: none;
+  background-color: var(--orange-color);
+  fill: #e2e2e2;
+}
+.leave-title {
+  width: 255px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 32px;
+}
+.leave-title-orang {
+  color: var(--orange-color);
+}
+.input-descrip {
+  width: 100%;
+  height: 45px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000;
+  padding: 10px 18px 10px 18px;
+  border-radius: 8px;
+  outline: none;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  margin-bottom: 14px;
+  background-color: #e2e2e2;
+}
+.input-descrip-left {
+  padding-left: 92px;
+}
+.user-comment {
+  resize: none;
+  width: 100%;
+  height: 91px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000;
+  border-radius: 8px;
+  padding: 14px 18px;
+  outline: none;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  margin-bottom: 18px;
+  background-color: #e2e2e2;
+}
+
+.input-descrip::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.input-descrip-left::placeholder {
+  border-left: 1px solid rgba(64, 64, 64, 0.3);
+  padding-left: 14px;
+}
+.input-descrip:focus {
+  /* outline: none; */
+  box-shadow: (0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+}
+.position-relative {
+  position: relative;
+}
+.icon-input {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.icon-input-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #000000;
+  padding-right: 8px;
+  /* border-right: 1px solid rgba(64, 64, 64, 0.3); */
+}
+.user-comment::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.leave-modal-btn {
+  padding: 12px 28px;
+  border: 1px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  border-radius: 100px;
+  color: var(--text-color-white);
+  background-color: var(--orange-color);
+  transition: background-color 0.25s linear;
+}
+.leave-modal-btn:hover,
+.leave-modal-btn:focus {
+  color: var(--orange-color);
+  background-color: #fcf1e0;
+}
+@media screen and (max-width: 375px) {
+  .modal {
+    width: 100%;
+  }
+}
+/* =====================SLIDER ====================*/
+ul {
+  list-style-type: none;
+}
+.wrapper {
+  height: 100%;
+  padding-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+@media (min-width: 375px) {
+  .wrapper {
+    padding: 50px 10px;
+  }
+}
+*/
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+  min-width: 0;
+}
+.slick-slider::marker {
+  visibility: none;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  height: 285px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Конкретный слайдер */
+.slider {
+  position: relative;
+}
+
+/*@media (min-width: 767px) {
+  .slider {
+    padding: 0px 40px;
+  }
+}*/
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+}
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+}
+.slider .slick-dots button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  background-color: rgba(17, 17, 17, 0.1);
+  border-radius: 50%;
+  border: transparent;
+}
+
+.slider .slick-dots li.slick-active button {
+  width: 28px;
+  background-color: #fd9222;
+
+  border-radius: 10px;
+}
+
+.slider__item {
+  /*padding: 0px 15px;*/
+  text-decoration: none;
+}
+.slider__item img {
+  max-width: 100%;
+}
+.slider__item.slick-center {
+}
+.reviews-list {
+  display: block;
+}
+.slider__item.slick-slide::marker {
+  display: none;
+}
+.slick-slider::marker {
+  display: none;
+}
 /* =====================MODAL ====================*/
 .backdrop {
   position: fixed;
@@ -336,5 +598,26 @@
   }
   .review-item {
     width: 360px;
+  }
+  .modal {
+    width: 676px;
+    height: 631px;
+    padding: 40px;
+  }
+  .input-descrip {
+    height: 66px;
+    margin-bottom: 19px;
+
+    padding: 22px 24px;
+  }
+  .input-descrip-left {
+    padding-left: 150px;
+  }
+  .input-descrip-left::placeholder {
+    padding-left: 28px;
+  }
+  .user-comment {
+    height: 137px;
+    padding: 22px 24px;
   }
 }
