@@ -28,7 +28,10 @@
   gap: 14px;
   margin-left: auto;
 }
-.footer-social-icon {
+.footer-social-icon-inst {
+  fill: currentColor;
+}
+.footer-social-icon-twitter {
   stroke: currentColor;
 }
 .footer-social-list-link {
@@ -101,8 +104,7 @@
   }
 
   .footer-addres {
-    margin-right: auto;
-    margin-left: 124px;
+    margin-right: 50px;
   }
   .footer-bottom-list {
     flex-direction: row;
