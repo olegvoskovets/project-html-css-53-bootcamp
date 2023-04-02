@@ -1,4 +1,4 @@
-/*:root {
+/*:root {hidden
   --main-bg-color: #fafafa;
   --secondary-bg-color: #1e1823;
   --text-color-white: #ffffff;
@@ -196,7 +196,7 @@
   position: relative;
 }
 .icon-input {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 18px;
   display: flex;
@@ -430,12 +430,11 @@ ul {
 }
 .text-flex {
   position: absolute;
-  top: 2px;
+  top: 1px;
   left: 18px;
   height: 18px;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
 }
 .tel-text {
@@ -575,7 +574,7 @@ ul {
     font-size: 18px;
   }
   .text-flex {
-    top: 0;
+    top: -2px;
     height: 24px;
   }
   .input-descrip-tel {
