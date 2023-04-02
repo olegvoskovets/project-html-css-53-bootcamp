@@ -1,121 +1,143 @@
- <section class="products">
+<section id="products" class="products">
   <div class="container">
     <h2 class="products-title">Our <span>Products</span></h2>
-    <ul class="products-list">
-      <li class="products-item">
-        <a href="" class="products-link"
-          ><img srcset="" src="" alt="Orange Chocolate Bar" width="230"
-        /></a>
-        <h3 class="products-name">Orange</h3>
-        <p class="products-description">Dark Chocolate</p>
-        <button type="button" class="products-button">
-          <p class="products-price">45 UAH</p>
-        </button>
-      </li>
-      <li class="products-item">
-        <a href="" class="products-link"
-          ><img
-            srcset=""
-            src=""
-            alt="Apple & Cranberry Chocolate Bar"
-            width="230"
-        /></a>
-        <h3 class="products-name">Apple&Cranberry</h3>
-        <p class="products-description">Milk Chocolate</p>
-        <button type="button" class="products-button">
-          <p class="products-price">50 UAH</p>
-        </button>
-      </li>
-      <li class="products-item">
-        <a href="" class="products-link"
-          ><img
-            srcset=""
-            src=""
-            alt="Lime & Sea Salt Chocolate Bar"
-            width="230"
-        /></a>
-        <h3 class="products-name">Lime&Sea Salt</h3>
-        <p class="products-description">Dark Chocolate</p>
-        <button type="button" class="products-button">
-          <p class="products-price">66 UAH</p>
-        </button>
-      </li>
-      <li class="products-item">
-        <a href="" class="products-link"
-          ><img srcset="" src="" alt="Pineapple Chocolate Bar" width="230"
-        /></a>
-        <h3 class="products-name">Pineapple</h3>
-        <p class="products-description">Dark Chocolate</p>
-        <button type="button" class="products-button">
-          <p class="products-price">54 UAH</p>
-        </button>
-      </li>
-    </ul>
-    <ul class="products-slider-buttons">
-      <li>
-        <svg width="28" height="13">
-          <use
-            class="products-slider-icon"
-            href="./img/symbol-defs#icon-oval"
-          ></use>
-        </svg>
-      </li>
-      <li>
-        <svg width="13" height="13">
-          <use
-            class="products-slider-icon"
-            href="./img/symbol-defs#icon-circle"
-          ></use>
-        </svg>
-      </li>
-      <li>
-        <svg width="13" height="13">
-          <use
-            class="products-slider-icon"
-            href="./img/symbol-defs#icon-circle"
-          ></use>
-        </svg>
-      </li>
-      <li>
-        <svg width="13" height="13">
-          <use
-            class="products-slider-icon"
-            href="./img/symbol-defs#icon-circle"
-          ></use>
-        </svg>
-      </li>
-      <li>
-        <svg width="13" height="13">
-          <use
-            class="products-slider-icon"
-            href="./img/symbol-defs#icon-circle"
-          ></use>
-        </svg>
-      </li>
-      <li>
-        <svg width="13" height="13">
-          <use
-            class="products-slider-icon"
-            href="./img/symbol-defs#icon-circle"
-          ></use>
-        </svg>
-      </li>
-      <li>
-        <svg width="13" height="13">
-          <use
-            class="products-slider-icon"
-            href="./img/symbol-defs#icon-circle"
-          ></use>
-        </svg>
-      </li>
-      <li>
-        <svg width="13" height="13">
-          <use
-            class="products-slider-icon"
-            href="./img/symbol-defs#icon-circle"
-          ></use>
-        </svg>
-      </li>
-    </ul>
+    <div class="swiper">
+      <ul class="products-list swiper-wrapper">
+        <li class="products-item swiper-slide">
+          <a href="" class="products-link"
+            ><img
+              srcset="
+                ./img/mobile/orange-tel.jpg    1x,
+                ./img/mobile/orange-tel@2x.jpg 2x
+              "
+              src="./src/img/mobile/orange-tel.jpg"
+              alt="Orange Chocolate Bar"
+              width="230"
+          /></a>
+          <h3 class="products-name">ORANGE</h3>
+          <p class="products-description">Dark Chocolate</p>
+          <button type="button" class="products-button">
+            <p class="products-price">45 UAH</p>
+          </button>
+        </li>
+        <li class="products-item swiper-slide">
+          <a href="" class="products-link"
+            ><img
+              srcset="
+                ./img/tablet/apple-cranberry@.jpg   1x,
+                ./img/tablet/apple-cranberry@2x.jpg 2x
+              "
+              src="./img/tablet/apple-cranberry@.jpg"
+              alt="Apple & Cranberry Chocolate Bar"
+              width="230"
+          /></a>
+          <h3 class="products-name">APPLE&CRANBERRY</h3>
+          <p class="products-description">Milk Chocolate</p>
+          <button type="button" class="products-button">
+            <p class="products-price">50 UAH</p>
+          </button>
+        </li>
+        <li class="products-item swiper-slide">
+          <a href="" class="products-link"
+            ><img
+              srcset="
+                ./img/tablet/lime-sea-salt.jpg    1x,
+                ./img/tablet/lime-sea-salt@2x.jpg 2x
+              "
+              src="./img/tablet/lime-sea-salt.jpg"
+              alt="Lime & Sea Salt Chocolate Bar"
+              width="230"
+          /></a>
+          <h3 class="products-name">LIME&SEA SALT</h3>
+          <p class="products-description">Dark Chocolate</p>
+          <button type="button" class="products-button">
+            <p class="products-price">66 UAH</p>
+          </button>
+        </li>
+        <li class="products-item swiper-slide">
+          <a href="" class="products-link"
+            ><img
+              srcset="
+                ./img/desktop/pineapple.jpg    1x,
+                ./img/desktop/pineapple@2x.jpg 2x
+              "
+              src="./img/desktop/pineapple.jpg"
+              alt="Pineapple Chocolate Bar"
+              width="230"
+          /></a>
+          <h3 class="products-name">PINEAPPLE</h3>
+          <p class="products-description">Dark Chocolate</p>
+          <button type="button" class="products-button">
+            <p class="products-price">54 UAH</p>
+          </button>
+        </li>
+        <li class="products-item swiper-slide">
+          <a href="" class="products-link"
+            ><img
+              srcset="
+                ./img/desktop/classic-milk.jpg    1x,
+                ./img/desktop/classic-milk@2x.jpg 2x
+              "
+              src="./img/desktop/classic-milk.jpg"
+              alt="Classic Chocolate Bar"
+              width="230"
+          /></a>
+          <h3 class="products-name">CLASSIC</h3>
+          <p class="products-description">Milk Chocolate</p>
+          <button type="button" class="products-button">
+            <p class="products-price">45 UAH</p>
+          </button>
+        </li>
+        <li class="products-item swiper-slide">
+          <a href="" class="products-link"
+            ><img
+              srcset="./img/desktop/honey.jpg 1x, ./img/desktop/honey@2x.jpg 2x"
+              src="./img/desktop/honey.jpg"
+              alt="Honey Chocolate Bar"
+              width="230"
+          /></a>
+          <h3 class="products-name">HONEY</h3>
+          <p class="products-description">Milk Chocolate</p>
+          <button type="button" class="products-button">
+            <p class="products-price">50 UAH</p>
+          </button>
+        </li>
+        <li class="products-item swiper-slide">
+          <a href="" class="products-link"
+            ><img
+              srcset="
+                ./img/desktop/roasted-fruits.jpg    1x,
+                ./img/desktop/roasted-fruits@2x.jpg 2x
+              "
+              src="./img/desktop/roasted-fruits.jpg"
+              alt="Roasted Fruits Chocolate Bar"
+              width="230"
+          /></a>
+          <h3 class="products-name">ROASTED FRUITS</h3>
+          <p class="products-description">Dark Chocolate</p>
+          <button type="button" class="products-button">
+            <p class="products-price">66 UAH</p>
+          </button>
+        </li>
+        <li class="products-item swiper-slide">
+          <a href="" class="products-link"
+            ><img
+              srcset="
+                ./img/desktop/classic-white.jpg    1x,
+                ./img/desktop/classic-white@2x.jpg 2x
+              "
+              src="./img/desktop/classic-white.jpg"
+              alt="Classic White Chocolate Bar"
+              width="230"
+          /></a>
+          <h3 class="products-name">CLASSIC</h3>
+          <p class="products-description">White Chocolate</p>
+          <button type="button" class="products-button">
+            <p class="products-price">54 UAH</p>
+          </button>
+        </li>
+      </ul>
+    </div>
   </div>
-</section> 
+  <!-- <div class="swiper-pagination"></div> -->
+</section>
