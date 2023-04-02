@@ -19,7 +19,7 @@
 }
 
 .top-sellers {
-  padding-bottom: 72px;
+  padding-bottom: 150px;
 }
 .top-sellers-button {
   display: block;
@@ -37,6 +37,8 @@
   line-height: 17px;
   color: #ffffff;
   border: none;
+  transition: color 250ms linear,
+    background-color 250ms linear;
 }
 .top-sellers-button:hover,
 .top-sellers-button:focus {
@@ -84,9 +86,11 @@
     margin-right: 0;
   }
 }
+/* =======================MODAL THANK YOU======================= */
 .thank_you_modal {
-  width: 516px;
-  height: 414px;
+  max-width: calc(100vw - 40px);
+  width: 311px;
+  height: 350px;
   background-color: #fd9222;
   position: absolute;
   top: 50%;
@@ -106,54 +110,88 @@
 }
 .thank-you-closed-btn {
   position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 40px;
-  height: 40px;
+  top: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #fcf1e0;
   border-radius: 50%;
   border-color: transparent;
+  transition: background-color 250ms linear;
 }
 .thank-you-img {
   position: absolute;
   bottom: 0;
 }
 .thank-you-svg {
+  width: 16px;
+  height: 16px;
   fill: #f16529;
 }
 .thank-you-title {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: calc(28 / 24);
+  font-size: 20px;
+  line-height: calc(24 / 20);
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #fcf1e0;
 }
 .thank-you-txt {
   display: block;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: calc(24 / 18);
+  font-size: 14px;
+  line-height: calc(16 / 14);
 
   letter-spacing: -0.02em;
   color: #ffffff;
-  width: 309px;
+  max-width: 219px;
 }
 
 .thank-you-txt-block {
-  position: absolute;
-  left: 163px;
-  top: 154px;
+  /* position: absolute; */
+    margin-left: 58px;
+    margin-top: 84px;
 }
 .thank-you-closed-btn:hover,
 .thank-you-closed-btn:focus {
   background-color: #ffffff;
   fill: none;
+}
+
+@media screen and (min-width: 768px) {
+  .thank_you_modal{
+    width: 516px;
+    height: 414px;
+  }
+  .thank-you-closed-btn{
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+  }
+  .thank-you-svg {
+    width: 22px;
+    height: 22px;
+  }
+  .thank-you-txt-block {
+    /* position: absolute; */
+    margin-left: 163px;
+    margin-top: 154px;
+  }
+  .thank-you-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+  .thank-you-txt {
+    font-size: 18px;
+    line-height: calc(24 / 18);
+  
+    max-width: 309px;
+  }
+  }
+@media screen and (min-width: 1200px) {
+
 }
