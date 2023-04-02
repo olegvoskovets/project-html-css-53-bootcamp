@@ -1,10 +1,8 @@
 .modal-buy-now {
-  height: 100vh;
   margin: 0 auto;
   width: 311px;
   background: #fafafa;
   border-radius: 15px;
-  position: relative;
   padding: 32px 24px;
   position: absolute;
   top: 50%;
@@ -40,9 +38,6 @@
 .modal-buy-now-word {
   color: #111111;
 }
-/* .goods-list-item {
-  position: relative;
-} */
 
 .goods-box {
   width: 231px;
