@@ -46,7 +46,7 @@
 .hero-ref {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  column-gap: 14px;
   align-items: center;
 }
 .hero-buy-btn {
@@ -128,7 +128,6 @@
   .hero-buy-btn {
     width: 183px;
     height: 45px;
-    margin-right: 14px;
   }
   .hero-made {
     width: 183px;
@@ -163,7 +162,7 @@
 /* Десктоп */
 @media screen and (min-width: 1200px) {
   .hero-view {
-    max-width: 1036px;
+    max-width: 100%;
     height: 600px;
     background-image: url(../img/desktop/hero-chocolate-covered-cocoa-powder-comp.jpg);
   }
@@ -187,8 +186,7 @@
 
 @media screen and (min-width: 375px) {
   .hero-view {
-    width: 335px;
-    margin: 0 avto;
+    width: 100%;
   }
 }
 

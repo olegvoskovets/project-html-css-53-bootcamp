@@ -1,33 +1,175 @@
-<div class="modal buy_now">
-    <h2><span class="buy">Buy</span><span class="now">Now</span></h2>
-    <ul class="product_list">
-        <li></li>
-        <li></li>
-        <li></li>
+<div class="backdrop is-hidden" buy-now-modal-hero>
+  <div class="modal-buy-now">
+    <button class="modal-buy-now-close" type="button" buy-now-modal-close-hero>
+      <svg class="modal-buy-now-icon" width="12" height="12">
+        <use href="../img/symbol-defs.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <h1 class="modal-buy-now-title">
+      BUY <span class="modal-buy-now-word">NOW</span>
+    </h1>
+    <ul class="goods-list">
+      <li class="goods-list-item">
+        <div class="goods-box">
+          <picture>
+            <source
+              srcset="
+                ./img/mobile/buy-now-1-tablet.png    1x,
+                ./img/mobile/buy-now-1-tablet@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./img/mobile/buy-now-1-tel.png    1x,
+                ./img/mobile/buy-now-1-tel@2x.png 2x
+              "
+              media="(min-width: 375px)"
+            />
+            <source srcset="" media="" />
+          </picture>
+          <img
+            class="goods-img"
+            src="./img/mobile/buy-now-1-tel.png"
+            alt="candy"
+            width="167"
+            height="148"
+          />
+          <button class="goods-weight-btn">100 g</button>
+        </div>
+      </li>
+      <li class="goods-list-item">
+        <div class="goods-box">
+          <picture>
+            <source
+              srcset="
+                ./img/mobile/buy-now-2-tablet.png    1x,
+                ./img/mobile/buy-now-2-tablet@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./img/mobile/buy-now-2-tel.png    1x,
+                ./img/mobile/buy-now-2-tel@2x.png 2x
+              "
+              media="(min-width: 375px)"
+            />
+            <source srcset="" media="" />
+          </picture>
+          <img
+            class="goods-img"
+            src="./img/mobile/buy-now-2-tel.png"
+            alt="chocolate"
+            width="167"
+            height="148"
+          />
+          <button class="goods-weight-btn">200 g</button>
+        </div>
+      </li>
+      <li class="goods-list-item">
+        <div class="goods-box">
+          <picture>
+            <source srcset="" media="" />
+            <source srcset="" media="" />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                ./img/mobile/buy-now-3-tablet.png    1x,
+                ./img/mobile/buy-now-3-tablet@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./img/mobile/buy-now-3-tel.png    1x,
+                ./img/mobile/buy-now-3-tel@2x.png 2x
+              "
+              media="(min-width: 375px)"
+            />
+            <source srcset="" media="" />
+          </picture>
+          <img
+            class="goods-img"
+            src="./img/mobile/buy-now-3-tel.png"
+            alt="sweets"
+            width="167"
+            height="148"
+          />
+          <button class="goods-weight-btn">300 g</button>
+        </div>
+      </li>
     </ul>
-    <form action="">
-        <label for="">
-            Personal information
-            <input type="name" id="name" placeholder="Name">
-            <input type="name" id="surname" placeholder="Surname">
-        </label>
-        <label for="">
-            Email
-            <input type="email" id="email" placeholder="Email">
-        </label>
-        <label for="">
-            Phone number
-            <input type="tel" id="tel" placeholder="Phone number">
-        </label>
-        <label for="">
-            Card number
-            <input type="number" id="number" placeholder="Enter card">
-        </label>
-        <label for="">
-            Comment
-            <textarea name="" id="" cols="30" rows="10" placeholder="Enter text"></textarea>
-        </label>
-        <button type="submit">Submit</button>
+    <form class="form-buy-now">
+      <div class="modal-form-group modal-form-name-surname">
+        <label class="label-text" for="name">Personal information</label>
+        <div class="input-name-surname">
+          <input
+            class="input-modal-buy-now input-name"
+            id="name"
+            type="text"
+            name="name"
+            minlength="3"
+            placeholder="Name"
+          />
+          <input
+            class="input-modal-buy-now input-surname"
+            id="surname"
+            type="text"
+            name="surname"
+            minlength="3"
+            placeholder="Surname"
+          />
+        </div>
+      </div>
+      <div class="modal-form-group">
+        <label class="label-text" for="email">Email</label>
+        <input
+          class="input-modal-buy-now"
+          id="email"
+          type="email"
+          name="email"
+          autocomplete="off"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div class="modal-form-group">
+        <label class="label-text" for="tel">Phone number</label>
+        <input
+          class="input-modal-buy-now input-tel"
+          id="telephone"
+          type="tel"
+          name="tel"
+          placeholder="Phone number"
+        />
+        <svg class="input-phone-icon" width="24" height="18">
+          <use href="./img/symbol-defs.svg#icon-input-numb"></use>
+        </svg>
+        <span class="input-phone-numb">+380&nbsp;</span>
+      </div>
+      <div class="modal-form-group">
+        <label class="label-text" for="card">Card number</label>
+        <input
+          placeholder="Enter card"
+          class="input-modal-buy-now input-card"
+          id="card"
+          type="tel"
+        />
+        <svg class="input-mastercard-icon" width="32" height="21">
+          <use href="./img/symbol-defs.svg#icon-mastercard"></use>
+        </svg>
+      </div>
+      <div class="modal-form-group">
+        <label class="label-text" for="comment">Comment</label>
+        <textarea
+          class="input-modal-buy-now comment-input"
+          name="comment"
+          id="comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
     </form>
-    <button class="close_btn ">X</button>
+    <button class="modal-buy-now-btn-submit" type="submit">SUBMIT</button>
+  </div>
 </div>
