@@ -196,7 +196,7 @@
   position: relative;
 }
 .icon-input {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 18px;
   display: flex;
@@ -316,12 +316,11 @@
 }
 .text-flex {
   position: absolute;
-  top: 2px;
+  top: 1px;
   left: 18px;
   height: 18px;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
 }
 .tel-text {
@@ -461,7 +460,7 @@
     font-size: 18px;
   }
   .text-flex {
-    top: 0;
+    top: -2px;
     height: 24px;
   }
   .input-descrip-tel {
