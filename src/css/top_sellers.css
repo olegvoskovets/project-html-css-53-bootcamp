@@ -19,7 +19,7 @@
 }
 
 .top-sellers {
-  padding-bottom: 150px;
+  padding-bottom: 72px;
 }
 .top-sellers-button {
   display: block;
@@ -37,8 +37,7 @@
   line-height: 17px;
   color: #ffffff;
   border: none;
-  transition: color 250ms linear,
-    background-color 250ms linear;
+  transition: color 250ms linear, background-color 250ms linear;
 }
 .top-sellers-button:hover,
 .top-sellers-button:focus {
@@ -75,8 +74,14 @@
     right: 0px;
     bottom: 80px;
   }
+  .top-sellers {
+    padding-bottom: 76px;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .top-sellers {
+    padding-bottom: 128px;
+  }
   .top-sellers-txt {
     position: absolute;
     max-width: 407px;
@@ -151,8 +156,8 @@
 
 .thank-you-txt-block {
   /* position: absolute; */
-    margin-left: 58px;
-    margin-top: 84px;
+  margin-left: 58px;
+  margin-top: 84px;
 }
 .thank-you-closed-btn:hover,
 .thank-you-closed-btn:focus {
@@ -161,11 +166,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .thank_you_modal{
+  .thank_you_modal {
     width: 516px;
     height: 414px;
   }
-  .thank-you-closed-btn{
+  .thank-you-closed-btn {
     top: 24px;
     right: 24px;
     width: 40px;
@@ -188,10 +193,9 @@
   .thank-you-txt {
     font-size: 18px;
     line-height: calc(24 / 18);
-  
+
     max-width: 309px;
   }
-  }
+}
 @media screen and (min-width: 1200px) {
-
 }
