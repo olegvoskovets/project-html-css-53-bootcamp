@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --main-bg-color: #fafafa;
   --secondary-bg-color: #1e1823;
