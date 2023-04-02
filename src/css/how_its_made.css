@@ -3,11 +3,15 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
     color: var(--text-color-dark);
     text-align: center;
 
     margin-bottom: 32px;
+}
+.how-its-made-title-ogange{
+    color: var(--orange-color);
 }
 .how-its-made-list-title{
     font-weight: 600;
@@ -36,9 +40,6 @@
 .how-its-made-list-item:not(:last-child){
     margin-bottom: 18px;
 }
-.how-its-made-title-ogange{
-    color: var(--orange-color);
-}
 .how-its-made-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -46,39 +47,16 @@
     gap: 20px;
 }
 .how-its-made-video-wrapper{
-    width: 335px;
+    max-width: 335px;
     height: 500px;
-    
-    background-image: url(../img/mobile/how-its-made-tel.png);
+
     border-radius: 15px;
 }
 .how-its-made-text-wrapper{
     background-color: #FFFFFF;
     border-radius: 15px;
     padding: 32px;
-    max-width: 614px;
-}
-.how-its-made-play-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    border: none;
-    background-color: transparent;
-}
-.how-its-made-play-circle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 1px solid #FFFFFF;
-    padding-left: 2px;
-
-    transition: transform 250ms linear;
+    max-width: 335px;
 }
 .how-its-made-play-icon{
     width: 14px;
@@ -91,28 +69,28 @@
 }
 
 @media screen and (min-width: 768px){
+    .how-its-made-title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.16;
+
+        margin-bottom: 50px;
+    }
     .how-its-made-video-wrapper{
-        width: 614px;
-        height: 500px;
+        max-width: 614px;
+        height: 400px;
         background-image: url(../img/tablet/how-its-made-tablet.png);
     }
     .how-its-made-list-title{
         margin-bottom: 28px;
     }
-    .how-its-made-play-circle{
-        width: 44px;
-        height: 44px;
-        padding-left: 4px;
-    }
-    .how-its-made-play-icon{
-        width: 20px;
-        height: 21px;
-        fill: #F5F4F4;
+    .how-its-made-text-wrapper{
+        max-width: 614px;
     }
 }
 @media screen and (min-width: 1200px) {
     .how-its-made-video-wrapper{
-        width: 600px;
+        max-width: 600px;
         height: 400px;
         background-image: url(../img/desktop/how-its-made-comp.png);
     }
@@ -129,4 +107,48 @@
         margin-bottom: 24px;
     }
 
+}
+.plyr {
+    /*
+    Задаємо основний колір для елементів керування
+    вбудованого програвача Plyr
+    */
+    --plyr-color-main: #fd9222;
+    /*  Скруглені кути рамки для відео  */
+    border-radius: 15px;
+  }
+  
+  .plyr__poster {
+    /*  Регулюємо розмір постера  */
+    background-size: cover;
+  } 
+  
+  .plyr__control--overlaid {
+    /*  Встановлюємо стилі для кнопки play  */
+    --plyr-control-spacing: 5px;
+    --plyr-video-control-background-hover: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+  }
+  
+  @media screen and (min-width:768px) {
+    .plyr__control--overlaid {
+      /*  Встановлюємо стилі для кнопки play  */
+      --plyr-control-spacing: 8.5px;
+    }
+  }
+  /* Приховуємо кнопу play після активації програвання відео */
+  .plyr--paused.plyr__control--overlaid {
+    opacity: 0;
+  }
+  /* Приховуємо панель з елементами управління перед активацією програвання відео */
+  .plyr--paused.plyr--stopped .plyr__controls {
+    opacity: 0;
+  }
+.plyr__video-wrapper {
+    height: 100%;
+}
+.plyr {
+    display:block;
+    height:100%;
+    width:100%;
 }
