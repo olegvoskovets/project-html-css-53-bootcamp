@@ -1,4 +1,4 @@
-const swiper = new swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
   slidesPerView: 4,
   spaceBetween: 18,
   pagination: {

@@ -206,6 +206,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
+  background-color: #e2e2e2;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -216,8 +217,8 @@
 }
 .close-btn-reviews:hover,
 .close-btn-reviews:focus {
-  background-color: var(--orange-color);
-  fill: #ffffff;
+  /* background-color: var(--orange-color); */
+  fill: var(--orange-color);
 }
 .modal-form-btn-reviews {
   padding: 12px 28px;
