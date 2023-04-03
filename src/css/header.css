@@ -51,6 +51,12 @@
   transform: scale(1.2);
 }
 
+.menu-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ===================== MOBILE-MENU ===================*/
 .mobile-menu {
   position: fixed;
