@@ -180,6 +180,13 @@
     padding-bottom: 72px;
     background-image: url(../img/tablet/explore-our-new-chocolate-first-1-tabl.jpg);
   }
+  .title-subscribe {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    max-width: 378px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -187,6 +194,7 @@
   .section-subscribe {
     background-image: url(../img/tablet/explore-our-new-chocolate-first-1-tabl@2x.jpg);
   }
+
 }
 /* ==========tablet and desktop==================*/
 @media screen and (min-width: 768px) {
