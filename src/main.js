@@ -1,6 +1,9 @@
 import './js/script.js';
 import './js/slik.js';
 import './js/review.js';
+import './js/script.js';
+import './js/slik.js';
+import './js/review.js';
 import './js/order.js';
 import './js/swiper.js';
 import './js/modal_explore_our_new.js';
