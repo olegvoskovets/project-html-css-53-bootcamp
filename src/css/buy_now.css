@@ -12,6 +12,10 @@
   overflow-y: auto;
 }
 
+.modal-buy-now::-webkit-scrollbar {
+  width: 0.1em;
+}
+
 .modal-buy-now-close {
   position: absolute;
   top: 14px;
@@ -208,6 +212,7 @@
     width: 609px;
     padding: 48px;
   }
+
   .modal-buy-now-btn-submit {
     max-width: 133px;
   }
@@ -247,10 +252,5 @@
 
   .comment-input {
     height: 137px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal-buy-now {
-    overflow: hidden;
   }
 }
