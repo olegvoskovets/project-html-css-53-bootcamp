@@ -70,7 +70,7 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  margin-bottom: 18px;
+  /* margin-bottom: 18px; */
   margin-top: 32px;
 }
 
@@ -141,6 +141,7 @@
   font-size: 14px;
   line-height: 1.2;
   color: #ffffff;
+  max-width: 109px;
   transition: background-color 250ms linear, color 250ms linear;
 }
 
@@ -194,7 +195,7 @@
   width: var(--swiper-pagination-bullet-active-width);
   background-size: contain;
   border-radius: 40px;
-  transition: background 250ms linear, opacity 250ms linear;
+  transition: background-color 250ms linear, opacity 250ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -206,6 +207,9 @@
   .modal-buy-now {
     width: 609px;
     padding: 48px;
+  }
+  .modal-buy-now-btn-submit{
+    max-width: 133px;
   }
 
   .modal-buy-now-title {

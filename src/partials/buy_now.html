@@ -1,6 +1,10 @@
-<div class="backdrop is-hidden" buy-now-modal-hero buy-now-modal-sellers>
+<div class="backdrop is-hidden" id="modal-order">
   <div class="modal-buy-now">
-    <button class="modal-buy-now-close" type="button" buy-now-modal-close-hero>
+    <button
+      class="modal-buy-now-close close-btn-order"
+      type="button"
+      buy-now-modal-close-hero
+    >
       <svg class="modal-buy-now-icon" width="12" height="12">
         <use href="./img/symbol-defs.svg#icon-menu-close"></use>
       </svg>
@@ -104,7 +108,7 @@
       </ul>
       <div class="swiper-pagination"></div>
     </div>
-    <form class="form-buy-now">
+    <form class="form-buy-now" id="form-order">
       <div class="modal-form-group modal-form-name-surname">
         <label class="label-text" for="name">Personal information</label>
         <div class="input-name-surname">
@@ -172,7 +176,13 @@
           placeholder="Enter text"
         ></textarea>
       </div>
+      <button
+        class="modal-buy-now-btn-submit"
+        type="submit"
+        id="order-submit-btn"
+      >
+        Submit
+      </button>
     </form>
-    <button class="modal-buy-now-btn-submit" type="submit">Submit</button>
   </div>
 </div>
