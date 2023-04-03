@@ -1,0 +1,257 @@
+.modal-buy-now {
+  max-height: 100%;
+  margin: auto;
+  width: 311px;
+  background: #fafafa;
+  border-radius: 15px;
+  padding: 32px 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+}
+
+.modal-buy-now::-webkit-scrollbar {
+  width: 0.1em;
+}
+
+.modal-buy-now-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-buy-now-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fd9222;
+  margin-bottom: 32px;
+}
+
+.modal-buy-now-word {
+  color: #111111;
+}
+
+.goods-box {
+  width: 231px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 32px 28px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 14px;
+}
+
+.goods-weight-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-top: 16px;
+  padding: 8px 27px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  color: #111111;
+}
+
+/* =============== form ============ */
+.form-buy-now {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  /* margin-bottom: 18px; */
+  margin-top: 32px;
+}
+
+.modal-form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.label-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.input-modal-buy-now {
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: border-color 250ms linear;
+  outline: transparent;
+  font-size: 18px;
+  color: black;
+}
+
+.input-modal-buy-now::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.input-modal-buy-now:hover,
+.input-modal-buy-now:focus {
+  border-color: #fd9222;
+}
+
+.input-name-surname {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.comment-input {
+  resize: none;
+  height: 91px;
+}
+
+.input-card {
+  padding-right: 48px;
+}
+
+.input-tel {
+  padding-left: 95px;
+}
+
+.modal-buy-now-btn-submit {
+  padding: 12px 28px;
+  border: none;
+  background: #fd9222;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  max-width: 109px;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.modal-buy-now-btn-submit:hover,
+.modal-buy-now-btn-submit:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+.input-mastercard-icon {
+  position: absolute;
+  top: 37px;
+  right: 14px;
+}
+
+.input-phone-icon {
+  position: absolute;
+  left: 18px;
+  top: 38px;
+}
+
+.input-phone-numb {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #000000;
+  position: absolute;
+  left: 50px;
+  top: 38px;
+  box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+:root {
+  --swiper-pagination-bullet-horizontal-gap: 7px;
+  --swiper-pagination-bullet-width: 13px;
+  --swiper-pagination-bullet-active-width: 28px;
+  --swiper-pagination-bullet-height: 13px;
+  --swiper-pagination-bullet-inactive-color: rgba(17, 17, 17, 0.9);
+  --swiper-pagination-color: rgba(253, 146, 34, 1);
+  --swiper-pagination-top: 512px;
+  --swiper-pagination-bottom: 0px;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: var(--swiper-pagination-bullet-active-width);
+  background-size: contain;
+  border-radius: 40px;
+  transition: background-color 250ms linear, opacity 250ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-buy-now .swiper-pagination,
+  .modal-buy-now .swiper-pagination-bullet,
+  .modal-buy-now .swiper-pagination-bullet-active {
+    display: none;
+  }
+
+  .modal-buy-now {
+    width: 609px;
+    padding: 48px;
+  }
+
+  .modal-buy-now-btn-submit {
+    max-width: 133px;
+  }
+
+  .modal-buy-now-title {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  .goods-list-item {
+    flex-basis: calc((100% - 2 * 16px) / 3);
+  }
+
+  .goods-box {
+    width: 160px;
+    height: 196px;
+    padding: 24px 20px 18px 20px;
+  }
+
+  .goods-img {
+    width: 120px;
+    height: 107px;
+  }
+
+  .input-name-surname {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input-name {
+    width: 50%;
+  }
+
+  .input-surname {
+    width: 50%;
+  }
+
+  .comment-input {
+    height: 137px;
+  }
+}

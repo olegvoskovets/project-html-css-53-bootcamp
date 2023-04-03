@@ -1,35 +1,136 @@
-<section class="top-sellers">
-    <div class="container">
+<section id="sellers" class="top-sellers">
+  <div class="container">
     <h2 class="products-title top-sellers-title">Top <span>Sellers</span></h2>
     <ul class="list top-sellers-list">
-        <li class="link-none">
-            <picture>
-                <source srcset="../img/desktop/top-sellers-1-comp.jpg 1x, ../img/desktop/top-sellers-1-comp@2x.jpg 2x" media="(min-width: 1200px)" width="368">
-                <source srcset="../img/mobile/top-sellers-1-tel.jpg 1x, ../img/mobile/top-sellers-1-tel@2x.jpg 2x" media="(max-width: 767px)" width="335" >
-                <source srcset="../img/tablet/top-sellers-1-tablet.jpg 1x, ../img/tablet/top-sellers-1-tablet@2x.jpg 2x" media="(min-width: 768px)" width="344">
-                
-            <img class="top-sellers-picture" src="../img/desktop/top-sellers-1-comp.jpg" alt="">
+      <li class="link-none">
+        <picture>
+          <source
+            srcset="
+              ./img/desktop/top-sellers-1-comp.jpg    1x,
+              ./img/desktop/top-sellers-1-comp@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+            width="368"
+          />
+          <source
+            srcset="
+              ./img/mobile/top-sellers-1-tel.jpg    1x,
+              ./img/mobile/top-sellers-1-tel@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+            width="335"
+          />
+          <source
+            srcset="
+              ./img/tablet/top-sellers-1-tablet.jpg    1x,
+              ./img/tablet/top-sellers-1-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+            width="344"
+          />
+
+          <img
+            class="top-sellers-picture"
+            src="./img/desktop/top-sellers-1-comp.jpg"
+            alt=""
+          />
         </picture>
-            <p class="top-sellers-txt">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
-        </li>
-        <li class="link-none">
-            <picture>
-                <source srcset="../img/desktop/top-sellers-2-comp.jpg 1x, ../img/desktop/top-sellers-2-comp@2x.jpg 2x" media="(min-width: 1200px)" width="368">
-                <source srcset="../img/mobile/top-sellers-2-tel.jpg 1x, ../img/mobile/top-sellers-2-tel@2x.jpg 2x" media="(max-width: 767px)" width="335">
-                <source srcset="../img/tablet/top-sellers-2-tablet.jpg 1x, ../img/tablet/top-sellers-2-tablet@2x.jpg 2x" media="(min-width: 768px)" width="344">
-               
-            <img class="top-sellers-picture" src="../img/desktop/top-sellers-2-comp.jpg" alt="">
+        <p class="top-sellers-txt">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
+      </li>
+      <li class="link-none">
+        <picture>
+          <source
+            srcset="
+              ./img/desktop/top-sellers-2-comp.jpg    1x,
+              ./img/desktop/top-sellers-2-comp@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+            width="368"
+          />
+          <source
+            srcset="
+              ./img/mobile/top-sellers-2-tel.jpg    1x,
+              ./img/mobile/top-sellers-2-tel@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+            width="335"
+          />
+          <source
+            srcset="
+              ./img/tablet/top-sellers-2-tablet.jpg    1x,
+              ./img/tablet/top-sellers-2-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+            width="344"
+          />
+
+          <img
+            class="top-sellers-picture"
+            src="./img/desktop/top-sellers-2-comp.jpg"
+            alt=""
+          />
         </picture>
-    </li>
-        <li class="link-none">
-            <picture>
-                <source srcset="../img/desktop/top-sellers-3-comp.jpg 1x, ../img/desktop/top-sellers-3-comp@2x.jpg 2x" media="(min-width: 1200px)" width="368">
-            <img class="top-sellers-picture" src="" alt="">
+      </li>
+      <li class="link-none">
+        <picture>
+          <source
+            srcset="
+              ./img/desktop/top-sellers-3-comp.jpg    1x,
+              ./img/desktop/top-sellers-3-comp@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+            width="368"
+          />
+          <img class="top-sellers-picture" src="" alt="" />
         </picture>
-        
-    </li>
+      </li>
     </ul>
-   
-    <button class="top-sellers-button" type="button">Buy now</button>
-</div>
+    <button class="top-sellers-button open-order-modal-btn" type="button">
+      Buy now
+    </button>
+  </div>
 </section>
+
+<!-- ====================MODAL thank-you========================== -->
+
+<div class="backdrop-thank-you is-hidden" id="success-modal-order">
+  <div class="thank_you_modal">
+    <div class="thank-you-txt-block">
+      <h2 class="thank-you-title">thank you!</h2>
+      <p class="thank-you-txt">
+        We are glad that you ordered our chocolate and we are giving you a 20%
+        discount on all our products.
+      </p>
+    </div>
+    <button class="thank-you-closed-btn close-btn-order" type="button">
+      <svg class="thank-you-svg" width="22" height="22">
+        <use href="./img/symbol-defs.svg#icon-close-btn-x"></use>
+      </svg>
+    </button>
+    <picture>
+      <source
+        srcset="
+          ./img/tablet/thank-you-tablet.png    1x,
+          ./img/tablet/thank-you-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./img/mobile/thank-you-tel.png    1x,
+          ./img/mobile/thank-you-tel@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="thank-you-img"
+        src="./img/tablet/thank-you-tablet.png"
+        alt="Chocolate bar"
+      />
+    </picture>
+  </div>
+</div>

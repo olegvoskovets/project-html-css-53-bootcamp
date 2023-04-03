@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --main-bg-color: #fafafa;
   --secondary-bg-color: #1e1823;
@@ -55,7 +59,20 @@ button {
   border: none;
   clip: rect(0 0 0 0);
 }
-.container {
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-active{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.is-hidden-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .list {
@@ -63,4 +80,37 @@ button {
 }
 .link-none {
   text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 374.98px) {
+  .container {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+    margin: 0 auto;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 704px;
+  }
+}
+/* десктоп */
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1136px;
+  }
 }
