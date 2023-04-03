@@ -6,6 +6,9 @@
   color: #111111;
   margin-top: 20px;
   margin-bottom: 32px;
+
+  margin-left: 20px;
+
 }
 
 .top-sellers-title {
@@ -20,6 +23,9 @@
   padding-bottom: 72px;
 }
 .top-sellers-button {
+
+  position: static;
+
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -36,6 +42,7 @@
   color: #ffffff;
   border: none;
   transition: color 250ms linear, background-color 250ms linear;
+
 }
 .top-sellers-button:hover,
 .top-sellers-button:focus {
@@ -164,6 +171,122 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .container {
+    position: relative;
+  }
+.top-sellers-txt {
+  margin-left: 0;
+}
+  .top-sellers-list {
+    display: flex;
+    gap: 16px;
+  }
+  .top-sellers-txt {
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+  .top-sellers-button {
+    position: absolute;
+    right: 0px;
+    bottom: 55px;
+  }
+  .top-sellers {
+    padding-bottom: 76px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top-sellers {
+    padding-bottom: 128px;
+  }
+  .top-sellers-txt {
+    position: static;
+    max-width: 407px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .top-sellers-button {
+    position: absolute;
+    margin-right: 0;
+    bottom: 58px;
+  }
+}
+/* =======================MODAL THANK YOU======================= */
+.thank_you_modal {
+  max-width: calc(100vw - 40px);
+  width: 311px;
+  height: 350px;
+  background-color: #fd9222;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+}
+.backdrop-thank-you {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+.thank-you-closed-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fcf1e0;
+  border-radius: 50%;
+  border-color: transparent;
+  transition: background-color 250ms linear;
+}
+.thank-you-img {
+  position: absolute;
+  bottom: 0;
+}
+.thank-you-svg {
+  width: 16px;
+  height: 16px;
+  fill: #f16529;
+}
+.thank-you-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fcf1e0;
+}
+.thank-you-txt {
+  display: block;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  max-width: 219px;
+}
+
+.thank-you-txt-block {
+  /* position: absolute; */
+  margin-left: 58px;
+  margin-top: 84px;
+}
+.thank-you-closed-btn:hover,
+.thank-you-closed-btn:focus {
+  background-color: #ffffff;
+  fill: none;
+}
+
+@media screen and (min-width: 768px) {
+
   .thank_you_modal {
     width: 516px;
     height: 414px;
