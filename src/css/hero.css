@@ -189,6 +189,11 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 374px) {
+  .hero-view {
+    padding: 10px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .hero-view {
