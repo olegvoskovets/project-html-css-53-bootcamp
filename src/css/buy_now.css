@@ -1,5 +1,6 @@
 .modal-buy-now {
-  margin: 0 auto;
+  max-height: 100%;
+  margin: auto;
   width: 311px;
   background: #fafafa;
   border-radius: 15px;
@@ -242,5 +243,10 @@
 
   .comment-input {
     height: 137px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-buy-now {
+    overflow: hidden;
   }
 }
