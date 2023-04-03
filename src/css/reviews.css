@@ -15,6 +15,7 @@
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 74px;
+  text-transform: uppercase;
 }
 
 .review-accent {
@@ -91,7 +92,7 @@
   line-height: 17px;
   text-align: center;
   display: block;
-  /* transition: background-color 250ms linear, color 250ms linear; */
+  transition: background-color 250ms linear, color 250ms linear;
 }
 
 .review-button:focus,
