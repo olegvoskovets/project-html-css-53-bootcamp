@@ -64,7 +64,7 @@ button {
   visibility: hidden;
   pointer-events: none;
 }
-.modal-active{
+.modal-active {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -89,13 +89,13 @@ button {
 
 @media screen and (max-width: 374.98px) {
   .container {
-    max-width: 375px;
+    max-width: 335px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 375px) {
   .container {
-    width: 375px;
+    width: 335px;
     margin: 0 auto;
   }
 }
