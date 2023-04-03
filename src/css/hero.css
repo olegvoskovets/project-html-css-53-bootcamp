@@ -81,6 +81,7 @@
   background-color: transparent;
   border: 1px solid #e2e2e2;
   transition: color 250ms linear, border-color 250ms linear;
+  text-decoration: none;
 }
 .hero-made:is(:hover, :focus) {
   border-color: #fd9222;
@@ -101,7 +102,9 @@
   color: #ffffff;
   margin-right: 12px;
   transition: color 250ms linear;
+  text-decoration: none;
 }
+
 .hero-circle-white {
   display: inline-flex;
   width: 28px;
