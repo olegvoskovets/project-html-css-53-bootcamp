@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --main-bg-color: #fafafa;
   --secondary-bg-color: #1e1823;
@@ -59,6 +63,11 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.modal-active{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 .is-hidden-hidden {
   opacity: 0;

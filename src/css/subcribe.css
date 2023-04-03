@@ -93,7 +93,7 @@
   height: 350px;
   transform: translate(-50%, -50%);
   background-image: url(../img/mobile/explore-our-new-chocolate-first-tel-2.jpg);
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 15px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -105,8 +105,8 @@
 }
 
 .subscribe-modal-close-btn-icon {
-    width: 12px;
-    height: 12px;
+  width: 12px;
+  height: 12px;
   transition: fill 250ms linear;
   fill: var(--text-color-white);
 }
@@ -166,7 +166,7 @@
   border-radius: 100px;
   padding: 14px 18px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  background-color: #e2e2e2;
+  background-color: #fafafa;
   transition: border-color 250ms linear;
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
 }
@@ -196,17 +196,16 @@
     max-width: 378px;
     margin-left: auto;
     margin-right: auto;
-    
   }
   .subscribe-modal-close-btn {
-      top: 24px;
+    top: 24px;
     right: 24px;
     height: 28px;
-  width: 28px;
+    width: 28px;
   }
   .subscribe-modal-close-btn-icon {
-    height:14px;
-    width: 14px
+    height: 14px;
+    width: 14px;
   }
 
   .box-subscribe {
@@ -214,7 +213,7 @@
   }
   .modal-title-subscribe {
     font-size: 24px;
-    line-height: calc(28 / 24) ;
+    line-height: calc(28 / 24);
     margin-bottom: 28px;
   }
   .subscribe-input-btn {
