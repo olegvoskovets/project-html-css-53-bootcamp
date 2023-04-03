@@ -199,8 +199,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .swiper-pagination,
-  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  .modal-buy-now .swiper-pagination,
+  .modal-buy-nows .swiper-pagination-bullet.swiper-pagination-bullet-active {
     display: none;
   }
 
@@ -208,7 +208,7 @@
     width: 609px;
     padding: 48px;
   }
-  .modal-buy-now-btn-submit{
+  .modal-buy-now-btn-submit {
     max-width: 133px;
   }
 
