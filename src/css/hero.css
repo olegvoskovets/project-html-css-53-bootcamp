@@ -1,5 +1,6 @@
 .hero-section {
   padding-bottom: 50px;
+  max-width: 100%;
 }
 .visually-hiden {
   position: absolute;
@@ -110,6 +111,11 @@
   border-radius: 50%;
   background-color: #ffffff;
   align-items: center;
+}
+@media screen and (max-width: 335px) {
+  .hero-section {
+    max-width: 335px;
+  }
 }
 
 /* Планшет */
