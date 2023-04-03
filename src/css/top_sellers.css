@@ -8,7 +8,6 @@
   margin-bottom: 32px;
 
   margin-left: 20px;
-
 }
 
 .top-sellers-title {
@@ -23,7 +22,6 @@
   padding-bottom: 72px;
 }
 .top-sellers-button {
-
   position: static;
 
   display: block;
@@ -42,7 +40,6 @@
   color: #ffffff;
   border: none;
   transition: color 250ms linear, background-color 250ms linear;
-
 }
 .top-sellers-button:hover,
 .top-sellers-button:focus {
@@ -76,8 +73,9 @@
   }
   .top-sellers-button {
     position: absolute;
-    right: 0px;
-    bottom: 80px;
+    right: 32px;
+    /* bottom: 80px; */
+    bottom: 55px;
   }
   .top-sellers {
     padding-bottom: 76px;
@@ -171,13 +169,12 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .container {
     position: relative;
   }
-.top-sellers-txt {
-  margin-left: 0;
-}
+  .top-sellers-txt {
+    margin-left: 0;
+  }
   .top-sellers-list {
     display: flex;
     gap: 16px;
@@ -188,8 +185,8 @@
   }
   .top-sellers-button {
     position: absolute;
-    right: 0px;
-    bottom: 55px;
+    right: 32px;
+    /* bottom: 55px; */
   }
   .top-sellers {
     padding-bottom: 76px;
@@ -286,7 +283,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .thank_you_modal {
     width: 516px;
     height: 414px;
