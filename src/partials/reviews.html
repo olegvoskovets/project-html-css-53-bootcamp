@@ -134,15 +134,19 @@
       </ul>
     </div>
 
-    <button class="review-button" type="button" leave_a_review_about-open>
+    <button class="review-button" id="open-subscribe-btn" type="button">
       Leave a review
     </button>
   </div>
 </section>
 <!-- MODAL -->
-<div class="backdrop is-hidden" leave_a_review_about-modal>
+<div class="backdrop is-hidden" id="modal-subscribe">
   <div class="modal_reviews">
-    <button type="button" class="close-btn-reviews" leave_a_review_about-close>
+    <button
+      type="button"
+      class="close-btn-reviews close-btn-subscribe"
+      leave_a_review_about-close
+    >
       <svg class="modal-close-icon-reviews" width="12" height="12">
         <use href="./img/symbol-defs.svg#icon-close-btn-x"></use>
       </svg>
@@ -151,7 +155,7 @@
       leave a review about
       <span class="reviews-form-title-orang"> our chocolate </span>
     </h2>
-    <form class="form-modal">
+    <form class="form-modal" id="formSubscribe-submit-subscribe">
       <div class="form-inputs">
         <label class="form-label">
           <input
@@ -209,7 +213,8 @@
       <button
         type="submit"
         class="modal-form-btn-reviews"
-        thank_you_for_your_feedback-open
+        id="subscribe-submit-btn"
+        ;
       >
         Send
       </button>

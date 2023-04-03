@@ -64,6 +64,11 @@ button {
   visibility: hidden;
   pointer-events: none;
 }
+.modal-active{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 .is-hidden-hidden {
   opacity: 0;
   visibility: hidden;
