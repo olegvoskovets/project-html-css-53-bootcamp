@@ -113,9 +113,9 @@
   background-color: #ffffff;
   align-items: center;
 }
-@media screen and (max-width: 315px) {
+@media screen and (max-width: 352px) {
   .hero-buy-btn {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 }
 @media screen and (max-width: 335px) {
