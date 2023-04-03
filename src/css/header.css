@@ -246,6 +246,11 @@
     display: flex;
     justify-content: space-between;
   }
+  @media screen and (max-width: 335px) {
+    .header-container {
+      max-width: 335px;
+    }
+  }
 
   .desktop-social-icon {
     fill: #111111;
