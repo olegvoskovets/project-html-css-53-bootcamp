@@ -51,6 +51,12 @@ display: none;
   }
 } */
 
+@media screen and (max-width: 375px) {
+  .advantages-section {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages-section {
     width: 768px;
