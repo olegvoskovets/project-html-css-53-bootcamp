@@ -1,5 +1,5 @@
 .section-subscribe {
-  max-width: 1200px;
+  width: 375px;
   margin: auto;
   background-position: center;
   text-align: center;
@@ -173,9 +173,9 @@
 
 /* ==========@media screen=============================================================== */
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 375px) {
   .section-subscribe {
-    width: 100%;
+    width: 375px;
     padding-top: 72px;
     padding-bottom: 72px;
     background-image: url(../img/tablet/explore-our-new-chocolate-first-1-tabl.jpg);
@@ -194,10 +194,12 @@
   .section-subscribe {
     background-image: url(../img/tablet/explore-our-new-chocolate-first-1-tabl@2x.jpg);
   }
-
 }
 /* ==========tablet and desktop==================*/
 @media screen and (min-width: 768px) {
+  .section-subscribe {
+    width: 768px;
+  }
   .title-subscribe {
     font-size: 24px;
     line-height: calc(28 / 24);
@@ -243,7 +245,6 @@
     color: var(--orange-color);
   }
   .section-subscribe {
-    width: 100%;
     background-image: url(../img/desktop/explore-our-new-chocolate-first-1-comp.jpg);
   }
 
@@ -274,5 +275,10 @@
     .modal_subscribe {
       background-image: url(../img/tablet/explore-our-new-chocolate-first-tablet-2@2x.jpg);
     }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-subscribe {
+    width: 1200px;
   }
 }
